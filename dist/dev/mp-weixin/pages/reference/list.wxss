@@ -1,0 +1,49 @@
+/* uni-app 全局 SCSS 变量 */
+.container.data-v-2f117fcf {
+  padding: 24rpx;
+}
+.sort-bar.data-v-2f117fcf {
+  display: flex;
+  gap: 32rpx;
+  padding: 16rpx 0 24rpx;
+  font-size: 26rpx;
+  color: var(--text-secondary);
+}
+.sort-bar .active.data-v-2f117fcf {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+.loading.data-v-2f117fcf, .empty.data-v-2f117fcf {
+  text-align: center;
+  padding: 80rpx;
+  color: var(--text-hint);
+}
+.group.data-v-2f117fcf {
+  margin-bottom: 32rpx;
+}
+.group-title.data-v-2f117fcf {
+  font-size: 26rpx;
+  font-weight: 600;
+  color: var(--text-secondary);
+  padding: 8rpx 0 16rpx;
+  display: block;
+}
+.item.data-v-2f117fcf {
+  padding: 20rpx 24rpx;
+  margin-bottom: 12rpx;
+  background: var(--bg-card);
+  border-radius: 12rpx;
+  box-shadow: var(--shadow-sm);
+}
+.item-title.data-v-2f117fcf {
+  display: block;
+  font-size: 28rpx;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+.item-preview.data-v-2f117fcf {
+  display: block;
+  font-size: 24rpx;
+  color: var(--text-hint);
+  margin-top: 4rpx;
+}

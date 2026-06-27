@@ -1,0 +1,7 @@
+{
+  "name": "syncFavorites",
+  "version": "1.0.0",
+  "description": "同步收藏数据",
+  "main": "index.js",
+  "dependencies": { "wx-server-sdk": "~2.6.3" }
+}

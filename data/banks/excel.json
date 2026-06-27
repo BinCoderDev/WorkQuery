@@ -1,0 +1,479 @@
+{
+  "bankId": "excel",
+  "bankName": "Excel函数题库",
+  "bankIcon": "📊",
+  "bankDescription": "覆盖VLOOKUP、IF、SUMIF等常用函数与数据处理技巧",
+  "totalQuestions": 30,
+  "order": 1,
+  "isActive": true,
+  "questions": [
+    {
+      "questionId": "excel_001",
+      "question": "在Excel中，以下哪个函数用于在表格首列中垂直查找数据？",
+      "options": ["A. HLOOKUP", "B. VLOOKUP", "C. LOOKUP", "D. XLOOKUP"],
+      "correctIndex": 1,
+      "explanation": "VLOOKUP（Vertical Lookup）用于在表格首列中垂直查找指定值，返回该行中指定列的值。HLOOKUP是水平查找，LOOKUP是旧版函数，XLOOKUP是Office365新函数。",
+      "codeBlocks": [
+        {
+          "language": "excel",
+          "caption": "VLOOKUP 语法",
+          "code": "=VLOOKUP(查找值, 表格区域, 列序号, [匹配类型])",
+          "codeHtml": "<span style=\"color:#569CD6\">=VLOOKUP</span>(查找值, 表格区域, 列序号, [匹配类型])"
+        }
+      ],
+      "knowledgeIds": ["excel_know_001"],
+      "difficulty": 1,
+      "orderIndex": 1
+    },
+    {
+      "questionId": "excel_002",
+      "question": "VLOOKUP函数的第四个参数设为FALSE表示什么？",
+      "options": ["A. 近似匹配", "B. 模糊查找", "C. 精确匹配", "D. 不区分大小写"],
+      "correctIndex": 2,
+      "explanation": "VLOOKUP第四个参数为FALSE（或0）表示精确匹配，要求查找值与首列数据完全一致。设为TRUE（或省略）表示近似匹配。",
+      "codeBlocks": [],
+      "knowledgeIds": ["excel_know_001"],
+      "difficulty": 1,
+      "orderIndex": 2
+    },
+    {
+      "questionId": "excel_003",
+      "question": "以下哪个函数可以根据指定条件对区域中的数值求和？",
+      "options": ["A. SUM", "B. COUNT", "C. SUMIF", "D. AVERAGE"],
+      "correctIndex": 2,
+      "explanation": "SUMIF(range, criteria, [sum_range]) 根据指定条件对满足条件的单元格求和。SUM是无条件求和，COUNT是计数，AVERAGE是求平均值。",
+      "codeBlocks": [
+        {
+          "language": "excel",
+          "caption": "SUMIF 示例",
+          "code": "=SUMIF(A2:A10, \">100\", B2:B10)",
+          "codeHtml": "<span style=\"color:#569CD6\">=SUMIF</span>(A2:A10, \"&gt;100\", B2:B10)"
+        }
+      ],
+      "knowledgeIds": ["excel_know_002"],
+      "difficulty": 1,
+      "orderIndex": 3
+    },
+    {
+      "questionId": "excel_004",
+      "question": "IF函数的正确语法是什么？",
+      "options": [
+        "A. IF(条件, 条件为假时的值, 条件为真时的值)",
+        "B. IF(值, 条件, 返回值)",
+        "C. IF(条件, 条件为真时的值, 条件为假时的值)",
+        "D. IF(返回值, 条件, 条件为真)"
+      ],
+      "correctIndex": 2,
+      "explanation": "IF(logical_test, value_if_true, value_if_false)：先判断条件，条件为真返回第二个参数，条件为假返回第三个参数。",
+      "codeBlocks": [
+        {
+          "language": "excel",
+          "caption": "IF 语法",
+          "code": "=IF(条件, 真时返回值, 假时返回值)",
+          "codeHtml": "<span style=\"color:#569CD6\">=IF</span>(条件, 真时返回值, 假时返回值)"
+        }
+      ],
+      "knowledgeIds": ["excel_know_003"],
+      "difficulty": 1,
+      "orderIndex": 4
+    },
+    {
+      "questionId": "excel_005",
+      "question": "以下哪个函数用于统计包含数字的单元格个数？",
+      "options": ["A. COUNTA", "B. COUNT", "C. COUNTIF", "D. COUNTBLANK"],
+      "correctIndex": 1,
+      "explanation": "COUNT统计包含数字的单元格个数。COUNTA统计非空单元格，COUNTIF按条件计数，COUNTBLANK统计空单元格。",
+      "codeBlocks": [],
+      "knowledgeIds": ["excel_know_004"],
+      "difficulty": 1,
+      "orderIndex": 5
+    },
+    {
+      "questionId": "excel_006",
+      "question": "在Excel中，符号\"$A$1\"表示什么类型的引用？",
+      "options": ["A. 相对引用", "B. 混合引用", "C. 绝对引用", "D. 循环引用"],
+      "correctIndex": 2,
+      "explanation": "$A$1是绝对引用，复制公式时行列都不会变。A1是相对引用，$A1或A$1是混合引用，只锁定行或列。",
+      "codeBlocks": [],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 6
+    },
+    {
+      "questionId": "excel_007",
+      "question": "COUNTIF函数的作用是什么？",
+      "options": [
+        "A. 统计所有单元格个数",
+        "B. 统计满足指定条件的单元格个数",
+        "C. 统计空白单元格个数",
+        "D. 对满足条件的单元格求和"
+      ],
+      "correctIndex": 1,
+      "explanation": "COUNTIF(range, criteria) 统计指定区域中满足条件的单元格个数。如需多条件使用COUNTIFS。",
+      "codeBlocks": [
+        {
+          "language": "excel",
+          "caption": "COUNTIF 示例",
+          "code": "=COUNTIF(B2:B20, \">=60\")",
+          "codeHtml": "<span style=\"color:#569CD6\">=COUNTIF</span>(B2:B20, \"&gt;=60\")"
+        }
+      ],
+      "knowledgeIds": ["excel_know_004"],
+      "difficulty": 1,
+      "orderIndex": 7
+    },
+    {
+      "questionId": "excel_008",
+      "question": "以下哪个函数可以将多个文本字符串合并为一个？",
+      "options": ["A. TEXT", "B. CONCATENATE", "C. LEFT", "D. TRIM"],
+      "correctIndex": 1,
+      "explanation": "CONCATENATE（或&运算符）用于合并多个文本字符串。TEXT用于格式化数字，LEFT从左边截取字符，TRIM去除多余空格。",
+      "codeBlocks": [
+        {
+          "language": "excel",
+          "caption": "两种合并方式",
+          "code": "=CONCATENATE(A1, \" \", B1)\n=A1 & \" \" & B1",
+          "codeHtml": "<span style=\"color:#569CD6\">=CONCATENATE</span>(A1, \" \", B1)<br>=A1 &amp; \" \" &amp; B1"
+        }
+      ],
+      "knowledgeIds": ["excel_know_005"],
+      "difficulty": 1,
+      "orderIndex": 8
+    },
+    {
+      "questionId": "excel_009",
+      "question": "AVERAGE函数计算的是什么？",
+      "options": ["A. 最大值", "B. 最小值", "C. 总和", "D. 算术平均值"],
+      "correctIndex": 3,
+      "explanation": "AVERAGE计算参数的算术平均值（总和除以个数）。MAX返回最大值，MIN返回最小值，SUM返回总和。",
+      "codeBlocks": [],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 9
+    },
+    {
+      "questionId": "excel_010",
+      "question": "若A1=5, B1=3, 则公式 =IF(A1>B1, \"大于\", \"不大于\") 的返回值是？",
+      "options": ["A. 5", "B. 3", "C. 大于", "D. 不大于"],
+      "correctIndex": 2,
+      "explanation": "5>3条件为真，IF返回第二个参数\"大于\"。如果条件为假则返回\"不大于\"。",
+      "codeBlocks": [],
+      "knowledgeIds": ["excel_know_003"],
+      "difficulty": 1,
+      "orderIndex": 10
+    },
+    {
+      "questionId": "excel_011",
+      "question": "SUMIFS函数与SUMIF函数的主要区别是什么？",
+      "options": [
+        "A. SUMIFS可以指定多个条件",
+        "B. SUMIFS只能求和不能计数",
+        "C. SUMIFS速度更快",
+        "D. 没有区别"
+      ],
+      "correctIndex": 0,
+      "explanation": "SUMIFS支持多个条件（多条件求和），而SUMIF只支持单一条件。SUMIFS的参数顺序也不同：=SUMIFS(求和区域, 条件区域1, 条件1, 条件区域2, 条件2, ...)。",
+      "codeBlocks": [],
+      "knowledgeIds": ["excel_know_002"],
+      "difficulty": 2,
+      "orderIndex": 11
+    },
+    {
+      "questionId": "excel_012",
+      "question": "以下哪个语句可以正确地在单元格A1中显示今天的日期？",
+      "options": ["A. =NOW()", "B. =TODAY()", "C. =DATE()", "D. =DAY()"],
+      "correctIndex": 1,
+      "explanation": "TODAY()返回当前日期（不含时间）。NOW()返回当前日期和时间，DATE(年,月,日)构造指定日期，DAY()提取日期的天数部分。",
+      "codeBlocks": [],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 12
+    },
+    {
+      "questionId": "excel_013",
+      "question": "LEFT函数的作用是什么？",
+      "options": [
+        "A. 从文本右侧截取字符",
+        "B. 删除文本左侧空格",
+        "C. 从文本左侧截取指定数量字符",
+        "D. 将文本转为大写"
+      ],
+      "correctIndex": 2,
+      "explanation": "LEFT(text, num_chars) 从文本左侧开始截取指定数量的字符。RIGHT从右侧截取，MID从中间截取。",
+      "codeBlocks": [
+        {
+          "language": "excel",
+          "caption": "LEFT 示例",
+          "code": "=LEFT(\"Excel函数\", 5)",
+          "codeHtml": "<span style=\"color:#569CD6\">=LEFT</span>(\"Excel函数\", 5)<br>结果: Excel"
+        }
+      ],
+      "knowledgeIds": ["excel_know_005"],
+      "difficulty": 1,
+      "orderIndex": 13
+    },
+    {
+      "questionId": "excel_014",
+      "question": "数据透视表的主要功能是什么？",
+      "options": [
+        "A. 美化表格外观",
+        "B. 快速汇总和分析大量数据",
+        "C. 创建图表",
+        "D. 保护工作表"
+      ],
+      "correctIndex": 1,
+      "explanation": "数据透视表是Excel最强大的数据分析工具，可以快速对大量数据进行分类汇总、交叉分析、筛选排序，无需编写公式。",
+      "codeBlocks": [],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 14
+    },
+    {
+      "questionId": "excel_015",
+      "question": "如何快速将A列和B列的数据合并到C列（中间用空格分隔）？",
+      "options": [
+        "A. C1 = A1 + B1",
+        "B. C1 = A1 & \" \" & B1",
+        "C. C1 = MERGE(A1, B1)",
+        "D. C1 = COMBINE(A1, B1)"
+      ],
+      "correctIndex": 1,
+      "explanation": "使用&运算符连接文本，中间加入\" \"表示空格分隔。+号用于数学运算，MERGE和COMBINE不是Excel函数。",
+      "codeBlocks": [],
+      "knowledgeIds": ["excel_know_005"],
+      "difficulty": 1,
+      "orderIndex": 15
+    },
+    {
+      "questionId": "excel_016",
+      "question": "若要在公式中固定引用B列（列不变行可变），正确的写法是？",
+      "options": ["A. B1", "B. $B$1", "C. $B1", "D. B$1"],
+      "correctIndex": 2,
+      "explanation": "$B1表示列绝对引用（B列固定），行相对引用（行号可变）。$B$1行列都固定，B$1行固定列可变，B1行列都相对。",
+      "codeBlocks": [],
+      "knowledgeIds": [],
+      "difficulty": 2,
+      "orderIndex": 16
+    },
+    {
+      "questionId": "excel_017",
+      "question": "ROUND函数的作用是？",
+      "options": [
+        "A. 向上取整",
+        "B. 向下取整",
+        "C. 四舍五入到指定小数位",
+        "D. 去掉小数部分"
+      ],
+      "correctIndex": 2,
+      "explanation": "ROUND(number, num_digits) 将数字四舍五入到指定小数位数。ROUNDUP向上取整，ROUNDDOWN向下取整，INT去掉小数。",
+      "codeBlocks": [
+        {
+          "language": "excel",
+          "caption": "ROUND 示例",
+          "code": "=ROUND(3.14159, 2)",
+          "codeHtml": "<span style=\"color:#569CD6\">=ROUND</span>(3.14159, 2)<br>结果: 3.14"
+        }
+      ],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 17
+    },
+    {
+      "questionId": "excel_018",
+      "question": "以下哪个是条件格式的功能？",
+      "options": [
+        "A. 将单元格内容加粗",
+        "B. 根据条件自动给单元格设置颜色等格式",
+        "C. 限制用户输入内容",
+        "D. 保护单元格不被修改"
+      ],
+      "correctIndex": 1,
+      "explanation": "条件格式可以根据单元格的值或公式结果自动应用格式（如数据条、色阶、图标集）。数据验证用于限制输入，保护工作表用于防止修改。",
+      "codeBlocks": [],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 18
+    },
+    {
+      "questionId": "excel_019",
+      "question": "VLOOKUP的第一个参数\"查找值\"必须在查找区域的哪一列？",
+      "options": ["A. 任意列", "B. 最后一列", "C. 第一列", "D. 中间列"],
+      "correctIndex": 2,
+      "explanation": "VLOOKUP的查找值必须位于表格区域的第一列（最左侧）。这是VLOOKUP的核心限制，如果需要从右侧向左查找，可以用INDEX+MATCH或XLOOKUP。",
+      "codeBlocks": [],
+      "knowledgeIds": ["excel_know_001"],
+      "difficulty": 2,
+      "orderIndex": 19
+    },
+    {
+      "questionId": "excel_020",
+      "question": "以下哪个快捷键可以在Excel中快速插入当前日期？",
+      "options": ["A. Ctrl + C", "B. Ctrl + ;", "C. Ctrl + D", "D. Ctrl + T"],
+      "correctIndex": 1,
+      "explanation": "Ctrl+;（分号）快速插入当前日期（静态值，不会自动更新）。Ctrl+Shift+;插入当前时间。需要动态日期使用=TODAY()函数。",
+      "codeBlocks": [],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 20
+    },
+    {
+      "questionId": "excel_021",
+      "question": "INDEX+MATCH组合函数相比VLOOKUP的优势是什么？",
+      "options": [
+        "A. 运算速度更快",
+        "B. 可以从右向左查找",
+        "C. 语法更简单",
+        "D. 不需要排序"
+      ],
+      "correctIndex": 1,
+      "explanation": "INDEX+MATCH的最大优势是可以从右向左查找（返回查找列左侧的数据），而VLOOKUP只能从左向右。此外INDEX+MATCH在插入删除列时更稳定。",
+      "codeBlocks": [
+        {
+          "language": "excel",
+          "caption": "INDEX+MATCH 示例",
+          "code": "=INDEX(A:A, MATCH(\"关键词\", B:B, 0))",
+          "codeHtml": "<span style=\"color:#569CD6\">=INDEX</span>(A:A, <span style=\"color:#569CD6\">MATCH</span>(\"关键词\", B:B, 0))"
+        }
+      ],
+      "knowledgeIds": [],
+      "difficulty": 2,
+      "orderIndex": 21
+    },
+    {
+      "questionId": "excel_022",
+      "question": "以下哪个函数用于去除文本中多余的空格（首尾空格和中间多余空格）？",
+      "options": ["A. CLEAN", "B. TRIM", "C. UPPER", "D. PROPER"],
+      "correctIndex": 1,
+      "explanation": "TRIM(text)去除文本首尾空格，并将中间连续多个空格缩减为单个空格。CLEAN用于去除非打印字符。",
+      "codeBlocks": [],
+      "knowledgeIds": ["excel_know_005"],
+      "difficulty": 1,
+      "orderIndex": 22
+    },
+    {
+      "questionId": "excel_023",
+      "question": "在Excel中，公式 =SUM(A1:A10, C1:C10) 计算的是什么？",
+      "options": [
+        "A. A1到C10区域的总和",
+        "B. A1到A10的总和",
+        "C. A1到A10和C1到C10的总和",
+        "D. A1到A10减去C1到C10"
+      ],
+      "correctIndex": 2,
+      "explanation": "SUM可以接受多个参数，每个参数之间用逗号分隔。此公式计算A1:A10和C1:C10两个区域的总和。",
+      "codeBlocks": [],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 23
+    },
+    {
+      "questionId": "excel_024",
+      "question": "LEN函数的作用是什么？",
+      "options": [
+        "A. 截取文本",
+        "B. 返回文本长度（字符数）",
+        "C. 查找字符位置",
+        "D. 替换文本"
+      ],
+      "correctIndex": 1,
+      "explanation": "LEN(text)返回文本字符串中的字符个数（包括空格）。中文字符和英文字符都算1个。LENB按字节计算（中文算2字节）。",
+      "codeBlocks": [
+        {
+          "language": "excel",
+          "caption": "LEN 示例",
+          "code": "=LEN(\"Hello World\")",
+          "codeHtml": "<span style=\"color:#569CD6\">=LEN</span>(\"Hello World\")<br>结果: 11"
+        }
+      ],
+      "knowledgeIds": ["excel_know_005"],
+      "difficulty": 1,
+      "orderIndex": 24
+    },
+    {
+      "questionId": "excel_025",
+      "question": "以下关于数据验证的说法，哪个是正确的？",
+      "options": [
+        "A. 数据验证可以防止公式错误",
+        "B. 数据验证可以限制用户输入的内容类型和范围",
+        "C. 数据验证等同于密码保护",
+        "D. 数据验证只能用于数字"
+      ],
+      "correctIndex": 1,
+      "explanation": "数据验证（数据→数据工具→数据验证）可以限制单元格输入内容：整数、小数、日期、序列（下拉列表）、文本长度等。它不是密码保护，不能防止用户删除验证规则。",
+      "codeBlocks": [],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 25
+    },
+    {
+      "questionId": "excel_026",
+      "question": "以下哪个公式可以正确计算A1:A10区域中大于60的数值的平均值？",
+      "options": [
+        "A. =AVERAGEIF(A1:A10, \">60\")",
+        "B. =AVERAGE(A1:A10, \">60\")",
+        "C. =SUMIF(A1:A10, \">60\")/COUNT(A1:A10)",
+        "D. =MEANIF(A1:A10, \">60\")"
+      ],
+      "correctIndex": 0,
+      "explanation": "AVERAGEIF(range, criteria) 计算满足条件的单元格的平均值。AVERAGE没有条件参数，MEANIF不是Excel函数。",
+      "codeBlocks": [],
+      "knowledgeIds": [],
+      "difficulty": 2,
+      "orderIndex": 26
+    },
+    {
+      "questionId": "excel_027",
+      "question": "在Excel中，\"合并单元格\"后，合并区域中的数据会怎样？",
+      "options": [
+        "A. 所有单元格数据保留",
+        "B. 只保留所有单元格数据的拼接",
+        "C. 只保留左上角单元格的数据",
+        "D. 所有数据被清空"
+      ],
+      "correctIndex": 2,
+      "explanation": "合并单元格后，只保留左上角第一个单元格的数据，其他单元格的数据会被删除。建议合并前先备份数据。",
+      "codeBlocks": [],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 27
+    },
+    {
+      "questionId": "excel_028",
+      "question": "MAX函数与LARGE函数的区别是什么？",
+      "options": [
+        "A. 没有区别",
+        "B. MAX返回最大值，LARGE可返回第N大的值",
+        "C. MAX只能用于数字，LARGE可用于文本",
+        "D. LARGE返回最大值，MAX返回最小值"
+      ],
+      "correctIndex": 1,
+      "explanation": "MAX返回最大值。LARGE(array, k)返回第k大的值，如LARGE(A1:A10, 2)返回第二大的值。对应的SMALL返回第k小的值。",
+      "codeBlocks": [],
+      "knowledgeIds": [],
+      "difficulty": 2,
+      "orderIndex": 28
+    },
+    {
+      "questionId": "excel_029",
+      "question": "以下哪个是绝对引用和相对引用混合的正确示例？",
+      "options": ["A. =A1+B1", "B. =$A$1+$B$1", "C. =$A1+B$1", "D. =##A1+##B1"],
+      "correctIndex": 2,
+      "explanation": "$A1是列绝对+行相对引用（拖动时A列不变，行号变化）。B$1是列相对+行绝对引用（拖动时列变化，行号不变）。$A$1行列都固定。",
+      "codeBlocks": [],
+      "knowledgeIds": [],
+      "difficulty": 2,
+      "orderIndex": 29
+    },
+    {
+      "questionId": "excel_030",
+      "question": "以下哪个快捷键可以快速选中整张工作表？",
+      "options": ["A. Ctrl + A", "B. Ctrl + S", "C. Ctrl + Z", "D. Ctrl + X"],
+      "correctIndex": 0,
+      "explanation": "Ctrl+A选中当前数据区域（再按一次选中整张工作表）。Ctrl+S保存，Ctrl+Z撤销，Ctrl+X剪切。",
+      "codeBlocks": [],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 30
+    }
+  ]
+}

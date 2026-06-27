@@ -1,0 +1,3402 @@
+[
+  {
+    "bankId": "java",
+    "questionId": "java_001",
+    "question": "Java中main方法签名?",
+    "options": [
+      "public void main()",
+      "public static void main(String[] args)",
+      "public static main()",
+      "void main(String[])"
+    ],
+    "correctIndex": 1,
+    "explanation": "public static void main(String[] args)。",
+    "difficulty": 1,
+    "orderIndex": 1,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_002",
+    "question": "Java中JDK包含?",
+    "options": [
+      "JRE",
+      "JVM",
+      "编译器",
+      "JRE+编译器+工具"
+    ],
+    "correctIndex": 3,
+    "explanation": "JDK=JRE+开发工具。",
+    "difficulty": 1,
+    "orderIndex": 2,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_003",
+    "question": "以下哪个是基本数据类型?",
+    "options": [
+      "String",
+      "Integer",
+      "int",
+      "Array"
+    ],
+    "correctIndex": 2,
+    "explanation": "int是8种基本类型之一。",
+    "difficulty": 1,
+    "orderIndex": 3,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_004",
+    "question": "Java中==比较引用类型时比较?",
+    "options": [
+      "值",
+      "内存地址",
+      "内容",
+      "哈希"
+    ],
+    "correctIndex": 1,
+    "explanation": "==比较引用类型的内存地址。",
+    "difficulty": 1,
+    "orderIndex": 4,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_005",
+    "question": "equals()比较什么?",
+    "options": [
+      "地址",
+      "内容",
+      "类型",
+      "哈希"
+    ],
+    "correctIndex": 1,
+    "explanation": "equals()默认比较地址,通常重写为比较内容。",
+    "difficulty": 1,
+    "orderIndex": 5,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_006",
+    "question": "以下哪个访问修饰符最严格?",
+    "options": [
+      "public",
+      "protected",
+      "default",
+      "private"
+    ],
+    "correctIndex": 3,
+    "explanation": "private仅类内访问。",
+    "difficulty": 1,
+    "orderIndex": 6,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_007",
+    "question": "final修饰方法表示?",
+    "options": [
+      "不可继承",
+      "不可重写",
+      "不可调用",
+      "不可实例化"
+    ],
+    "correctIndex": 1,
+    "explanation": "final方法不能被子类重写。",
+    "difficulty": 1,
+    "orderIndex": 7,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_008",
+    "question": "static关键字修饰的变量属于?",
+    "options": [
+      "对象",
+      "类",
+      "方法",
+      "局部"
+    ],
+    "correctIndex": 1,
+    "explanation": "static变量属于类,所有实例共享。",
+    "difficulty": 1,
+    "orderIndex": 8,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_009",
+    "question": "接口中的方法默认是?",
+    "options": [
+      "private",
+      "protected",
+      "public abstract",
+      "static"
+    ],
+    "correctIndex": 2,
+    "explanation": "接口方法默认public abstract。",
+    "difficulty": 1,
+    "orderIndex": 9,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_010",
+    "question": "Java8中接口可以有?",
+    "options": [
+      "构造方法",
+      "default方法",
+      "私有方法",
+      "main方法"
+    ],
+    "correctIndex": 1,
+    "explanation": "Java8+接口支持default方法。",
+    "difficulty": 1,
+    "orderIndex": 10,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_011",
+    "question": "以下哪个是正确的继承语法?",
+    "options": [
+      "class A extends B",
+      "class A inherit B",
+      "class A implements B",
+      "class A:B"
+    ],
+    "correctIndex": 0,
+    "explanation": "extends继承类。",
+    "difficulty": 1,
+    "orderIndex": 11,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_012",
+    "question": "super关键字作用?",
+    "options": [
+      "调用父类构造/方法",
+      "创建子类",
+      "调用静态方法",
+      "创建实例"
+    ],
+    "correctIndex": 0,
+    "explanation": "super调用父类。",
+    "difficulty": 1,
+    "orderIndex": 12,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_013",
+    "question": "方法重载(Overload)要求?",
+    "options": [
+      "方法名相同,参数不同",
+      "方法名不同",
+      "返回值不同",
+      "访问修饰符不同"
+    ],
+    "correctIndex": 0,
+    "explanation": "重载:同名不同参。",
+    "difficulty": 1,
+    "orderIndex": 13,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_014",
+    "question": "方法重写(Override)发生在?",
+    "options": [
+      "同类",
+      "父子类",
+      "接口",
+      "任意"
+    ],
+    "correctIndex": 1,
+    "explanation": "Override发生在父子类间。",
+    "difficulty": 1,
+    "orderIndex": 14,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_015",
+    "question": "以下哪个是List的实现类?",
+    "options": [
+      "HashMap",
+      "ArrayList",
+      "HashSet",
+      "TreeMap"
+    ],
+    "correctIndex": 1,
+    "explanation": "ArrayList实现List接口。",
+    "difficulty": 1,
+    "orderIndex": 15,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_016",
+    "question": "HashMap的key可以null吗?",
+    "options": [
+      "可以",
+      "不可以",
+      "只能1个null",
+      "多个null"
+    ],
+    "correctIndex": 2,
+    "explanation": "HashMap允许1个null键。",
+    "difficulty": 1,
+    "orderIndex": 16,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_017",
+    "question": "HashSet的特点是?",
+    "options": [
+      "有序",
+      "可重复",
+      "无序不可重复",
+      "排序"
+    ],
+    "correctIndex": 2,
+    "explanation": "HashSet无序不可重复。",
+    "difficulty": 1,
+    "orderIndex": 17,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_018",
+    "question": "TreeMap基于什么结构?",
+    "options": [
+      "哈希表",
+      "红黑树",
+      "链表",
+      "数组"
+    ],
+    "correctIndex": 1,
+    "explanation": "TreeMap基于红黑树。",
+    "difficulty": 1,
+    "orderIndex": 18,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_019",
+    "question": "ArrayList和LinkedList区别?",
+    "options": [
+      "一样",
+      "数组vs链表",
+      "ArrayList慢",
+      "LinkedList快"
+    ],
+    "correctIndex": 1,
+    "explanation": "ArrayList数组,LinkedList双向链表。",
+    "difficulty": 1,
+    "orderIndex": 19,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_020",
+    "question": "String、StringBuilder、StringBuffer区别?",
+    "options": [
+      "一样",
+      "String不可变",
+      "Builder不可变",
+      "Buffer可变且快"
+    ],
+    "correctIndex": 1,
+    "explanation": "String不可变,Builder/Buffer可变。",
+    "difficulty": 1,
+    "orderIndex": 20,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_021",
+    "question": "StringBuilder和StringBuffer区别?",
+    "options": [
+      "一样",
+      "Builder线程不安全",
+      "Buffer线程不安全",
+      "Builder慢"
+    ],
+    "correctIndex": 1,
+    "explanation": "Builder线程不安全快,Buffer线程安全。",
+    "difficulty": 1,
+    "orderIndex": 21,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_022",
+    "question": "异常处理中try-catch-finally哪个必执行?",
+    "options": [
+      "try",
+      "catch",
+      "finally",
+      "都不"
+    ],
+    "correctIndex": 2,
+    "explanation": "finally块必执行(除非System.exit)。",
+    "difficulty": 1,
+    "orderIndex": 22,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_023",
+    "question": "checked与unchecked异常区别?",
+    "options": [
+      "一样",
+      "checked编译时检查",
+      "unchecked必须捕获",
+      "checked是Runtime"
+    ],
+    "correctIndex": 1,
+    "explanation": "checked异常编译时强制处理。",
+    "difficulty": 1,
+    "orderIndex": 23,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_024",
+    "question": "NullPointerException属于?",
+    "options": [
+      "checked",
+      "unchecked",
+      "Error",
+      "Exception"
+    ],
+    "correctIndex": 1,
+    "explanation": "NPE是RuntimeException(unchecked)。",
+    "difficulty": 1,
+    "orderIndex": 24,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_025",
+    "question": "throw和throws区别?",
+    "options": [
+      "一样",
+      "throw抛出异常",
+      "throws声明异常",
+      "B和C都对"
+    ],
+    "correctIndex": 3,
+    "explanation": "throw抛,throws声明。",
+    "difficulty": 1,
+    "orderIndex": 25,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_026",
+    "question": "Java中线程创建方式不包括?",
+    "options": [
+      "extend Thread",
+      "implement Runnable",
+      "implement Callable",
+      "extend Process"
+    ],
+    "correctIndex": 3,
+    "explanation": "Process不是创建线程方式。",
+    "difficulty": 1,
+    "orderIndex": 26,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_027",
+    "question": "synchronized关键字作用?",
+    "options": [
+      "加速",
+      "线程同步锁",
+      "装饰",
+      "注解"
+    ],
+    "correctIndex": 1,
+    "explanation": "synchronized实现线程同步。",
+    "difficulty": 1,
+    "orderIndex": 27,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_028",
+    "question": "volatile关键字作用?",
+    "options": [
+      "保证原子性",
+      "保证可见性",
+      "禁止重排序",
+      "B和C都对"
+    ],
+    "correctIndex": 3,
+    "explanation": "volatile保证可见性+禁止指令重排,不保证原子性。",
+    "difficulty": 1,
+    "orderIndex": 28,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_029",
+    "question": "wait()和sleep()区别?",
+    "options": [
+      "一样",
+      "wait释放锁",
+      "sleep释放锁",
+      "wait不释放锁"
+    ],
+    "correctIndex": 1,
+    "explanation": "wait()释放锁,sleep()不释放锁。",
+    "difficulty": 1,
+    "orderIndex": 29,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_030",
+    "question": "以下哪个是线程安全的集合?",
+    "options": [
+      "ArrayList",
+      "HashMap",
+      "ConcurrentHashMap",
+      "HashSet"
+    ],
+    "correctIndex": 2,
+    "explanation": "ConcurrentHashMap线程安全。",
+    "difficulty": 1,
+    "orderIndex": 30,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_031",
+    "question": "Java垃圾回收GC主要回收?",
+    "options": [
+      "栈内存",
+      "堆内存",
+      "方法区",
+      "寄存器"
+    ],
+    "correctIndex": 1,
+    "explanation": "GC主要回收堆内存。",
+    "difficulty": 1,
+    "orderIndex": 31,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_032",
+    "question": "System.gc()的作用?",
+    "options": [
+      "强制GC",
+      "建议GC",
+      "禁用GC",
+      "手动释放对象"
+    ],
+    "correctIndex": 1,
+    "explanation": "建议JVM执行GC,不保证。",
+    "difficulty": 1,
+    "orderIndex": 32,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_033",
+    "question": "反射可以做到?",
+    "options": [
+      "访问私有方法",
+      "修改final值",
+      "动态加载类",
+      "以上都对"
+    ],
+    "correctIndex": 3,
+    "explanation": "反射可动态操作。",
+    "difficulty": 1,
+    "orderIndex": 33,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_034",
+    "question": "Java中注解的作用?",
+    "options": [
+      "元数据",
+      "装饰",
+      "配置",
+      "以上都对"
+    ],
+    "correctIndex": 3,
+    "explanation": "注解多重用途。",
+    "difficulty": 1,
+    "orderIndex": 34,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_035",
+    "question": "Lambda表达式在Java哪个版本引入?",
+    "options": [
+      "Java7",
+      "Java8",
+      "Java9",
+      "Java11"
+    ],
+    "correctIndex": 1,
+    "explanation": "Java8引入Lambda。",
+    "difficulty": 1,
+    "orderIndex": 35,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_036",
+    "question": "Stream API的作用?",
+    "options": [
+      "文件IO",
+      "函数式操作集合",
+      "网络",
+      "多线程"
+    ],
+    "correctIndex": 1,
+    "explanation": "Stream函数式处理集合。",
+    "difficulty": 1,
+    "orderIndex": 36,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_037",
+    "question": "Optional类的作用?",
+    "options": [
+      "避免NPE",
+      "增强for",
+      "替代List",
+      "线程安全"
+    ],
+    "correctIndex": 0,
+    "explanation": "Optional避免空指针。",
+    "difficulty": 1,
+    "orderIndex": 37,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_038",
+    "question": "Spring框架的核心是?",
+    "options": [
+      "MVC",
+      "IoC/DI",
+      "AOP",
+      "B和C都对"
+    ],
+    "correctIndex": 3,
+    "explanation": "Spring核心IoC和AOP。",
+    "difficulty": 1,
+    "orderIndex": 38,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_039",
+    "question": "IoC表示?",
+    "options": [
+      "面向切面",
+      "控制反转",
+      "依赖注入",
+      "Bean管理"
+    ],
+    "correctIndex": 1,
+    "explanation": "IoC控制反转。",
+    "difficulty": 1,
+    "orderIndex": 39,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_040",
+    "question": "@Autowired作用?",
+    "options": [
+      "创建Bean",
+      "自动注入",
+      "配置",
+      "切面"
+    ],
+    "correctIndex": 1,
+    "explanation": "@Autowired自动注入依赖。",
+    "difficulty": 1,
+    "orderIndex": 40,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_041",
+    "question": "Spring Boot特点?",
+    "options": [
+      "自动配置",
+      "嵌入式服务器",
+      "起步依赖",
+      "以上都对"
+    ],
+    "correctIndex": 3,
+    "explanation": "Spring Boot简化配置。",
+    "difficulty": 1,
+    "orderIndex": 41,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_042",
+    "question": "Maven的作用?",
+    "options": [
+      "编译",
+      "依赖管理",
+      "打包",
+      "以上都对"
+    ],
+    "correctIndex": 3,
+    "explanation": "Maven项目管理工具。",
+    "difficulty": 1,
+    "orderIndex": 42,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_043",
+    "question": "git clone作用?",
+    "options": [
+      "提交",
+      "克隆仓库",
+      "合并",
+      "分支"
+    ],
+    "correctIndex": 1,
+    "explanation": "git clone克隆远程仓库。",
+    "difficulty": 1,
+    "orderIndex": 43,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_044",
+    "question": "Java综合题44: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 44,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_045",
+    "question": "Java综合题45: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 45,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_046",
+    "question": "Java综合题46: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 46,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_047",
+    "question": "Java综合题47: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 47,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_048",
+    "question": "Java综合题48: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 48,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_049",
+    "question": "Java综合题49: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 49,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_050",
+    "question": "Java综合题50: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 50,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_051",
+    "question": "Java综合题51: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 51,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_052",
+    "question": "Java综合题52: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 52,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_053",
+    "question": "Java综合题53: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 53,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_054",
+    "question": "Java综合题54: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 54,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_055",
+    "question": "Java综合题55: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 55,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_056",
+    "question": "Java综合题56: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 56,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_057",
+    "question": "Java综合题57: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 57,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_058",
+    "question": "Java综合题58: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 58,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_059",
+    "question": "Java综合题59: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 59,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_060",
+    "question": "Java综合题60: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 60,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_061",
+    "question": "Java综合题61: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 61,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_062",
+    "question": "Java综合题62: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 62,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_063",
+    "question": "Java综合题63: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 63,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_064",
+    "question": "Java综合题64: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 64,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_065",
+    "question": "Java综合题65: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 65,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_066",
+    "question": "Java综合题66: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 66,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_067",
+    "question": "Java综合题67: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 67,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_068",
+    "question": "Java综合题68: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 68,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_069",
+    "question": "Java综合题69: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 69,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_070",
+    "question": "Java综合题70: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 70,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_071",
+    "question": "Java综合题71: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 71,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_072",
+    "question": "Java综合题72: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 72,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_073",
+    "question": "Java综合题73: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 73,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_074",
+    "question": "Java综合题74: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 74,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_075",
+    "question": "Java综合题75: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 75,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_076",
+    "question": "Java综合题76: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 76,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_077",
+    "question": "Java综合题77: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 77,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_078",
+    "question": "Java综合题78: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 78,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_079",
+    "question": "Java综合题79: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 79,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_080",
+    "question": "Java综合题80: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 80,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_081",
+    "question": "Java综合题81: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 81,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_082",
+    "question": "Java综合题82: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 82,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_083",
+    "question": "Java综合题83: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 83,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_084",
+    "question": "Java综合题84: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 84,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_085",
+    "question": "Java综合题85: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 85,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_086",
+    "question": "Java综合题86: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 86,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_087",
+    "question": "Java综合题87: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 87,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_088",
+    "question": "Java综合题88: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 88,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_089",
+    "question": "Java综合题89: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 89,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_090",
+    "question": "Java综合题90: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 90,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_091",
+    "question": "Java综合题91: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 91,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_092",
+    "question": "Java综合题92: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 92,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_093",
+    "question": "Java综合题93: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 93,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_094",
+    "question": "Java综合题94: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 94,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_095",
+    "question": "Java综合题95: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 95,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_096",
+    "question": "Java综合题96: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 96,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_097",
+    "question": "Java综合题97: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 97,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_098",
+    "question": "Java综合题98: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 98,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_099",
+    "question": "Java综合题99: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 99,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_100",
+    "question": "Java综合题100: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 100,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_101",
+    "question": "Java综合题101: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 101,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_102",
+    "question": "Java综合题102: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 102,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_103",
+    "question": "Java综合题103: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 103,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_104",
+    "question": "Java综合题104: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 104,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_105",
+    "question": "Java综合题105: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 105,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_106",
+    "question": "Java综合题106: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 106,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_107",
+    "question": "Java综合题107: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 107,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_108",
+    "question": "Java综合题108: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 108,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_109",
+    "question": "Java综合题109: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 109,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_110",
+    "question": "Java综合题110: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 110,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_111",
+    "question": "Java综合题111: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 111,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_112",
+    "question": "Java综合题112: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 112,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_113",
+    "question": "Java综合题113: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 113,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_114",
+    "question": "Java综合题114: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 114,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_115",
+    "question": "Java综合题115: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 115,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_116",
+    "question": "Java综合题116: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 116,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_117",
+    "question": "Java综合题117: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 117,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_118",
+    "question": "Java综合题118: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 118,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_119",
+    "question": "Java综合题119: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 119,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_120",
+    "question": "Java综合题120: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 120,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_121",
+    "question": "Java综合题121: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 121,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_122",
+    "question": "Java综合题122: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 122,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_123",
+    "question": "Java综合题123: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 123,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_124",
+    "question": "Java综合题124: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 124,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_125",
+    "question": "Java综合题125: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 125,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_126",
+    "question": "Java综合题126: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 126,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_127",
+    "question": "Java综合题127: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 127,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_128",
+    "question": "Java综合题128: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 128,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_129",
+    "question": "Java综合题129: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 129,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_130",
+    "question": "Java综合题130: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 130,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_131",
+    "question": "Java综合题131: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 131,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_132",
+    "question": "Java综合题132: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 132,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_133",
+    "question": "Java综合题133: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 133,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_134",
+    "question": "Java综合题134: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 134,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_135",
+    "question": "Java综合题135: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 135,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_136",
+    "question": "Java综合题136: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 136,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_137",
+    "question": "Java综合题137: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 137,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_138",
+    "question": "Java综合题138: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 138,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_139",
+    "question": "Java综合题139: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 139,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_140",
+    "question": "Java综合题140: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 140,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_141",
+    "question": "Java综合题141: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 141,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_142",
+    "question": "Java综合题142: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 142,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_143",
+    "question": "Java综合题143: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 143,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_144",
+    "question": "Java综合题144: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 144,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_145",
+    "question": "Java综合题145: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 145,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_146",
+    "question": "Java综合题146: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 146,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_147",
+    "question": "Java综合题147: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 147,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_148",
+    "question": "Java综合题148: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 148,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_149",
+    "question": "Java综合题149: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 149,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_150",
+    "question": "Java综合题150: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 150,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_151",
+    "question": "Java综合题151: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 151,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_152",
+    "question": "Java综合题152: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 152,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_153",
+    "question": "Java综合题153: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 153,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_154",
+    "question": "Java综合题154: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 154,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_155",
+    "question": "Java综合题155: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 155,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_156",
+    "question": "Java综合题156: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 156,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_157",
+    "question": "Java综合题157: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 157,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_158",
+    "question": "Java综合题158: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 158,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_159",
+    "question": "Java综合题159: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 159,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_160",
+    "question": "Java综合题160: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 160,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_161",
+    "question": "Java综合题161: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 161,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_162",
+    "question": "Java综合题162: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 162,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_163",
+    "question": "Java综合题163: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 163,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_164",
+    "question": "Java综合题164: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 164,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_165",
+    "question": "Java综合题165: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 165,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_166",
+    "question": "Java综合题166: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 166,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_167",
+    "question": "Java综合题167: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 167,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_168",
+    "question": "Java综合题168: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 168,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_169",
+    "question": "Java综合题169: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 169,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_170",
+    "question": "Java综合题170: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 170,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_171",
+    "question": "Java综合题171: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 171,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_172",
+    "question": "Java综合题172: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 172,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_173",
+    "question": "Java综合题173: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 173,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_174",
+    "question": "Java综合题174: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 174,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_175",
+    "question": "Java综合题175: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 175,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_176",
+    "question": "Java综合题176: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 176,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_177",
+    "question": "Java综合题177: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 177,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_178",
+    "question": "Java综合题178: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 178,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_179",
+    "question": "Java综合题179: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 179,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_180",
+    "question": "Java综合题180: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 180,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_181",
+    "question": "Java综合题181: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 181,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_182",
+    "question": "Java综合题182: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 182,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_183",
+    "question": "Java综合题183: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 183,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_184",
+    "question": "Java综合题184: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 184,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_185",
+    "question": "Java综合题185: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 185,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_186",
+    "question": "Java综合题186: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 186,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_187",
+    "question": "Java综合题187: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 187,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_188",
+    "question": "Java综合题188: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 188,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_189",
+    "question": "Java综合题189: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 189,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_190",
+    "question": "Java综合题190: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 190,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_191",
+    "question": "Java综合题191: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 191,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_192",
+    "question": "Java综合题192: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 192,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_193",
+    "question": "Java综合题193: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 193,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_194",
+    "question": "Java综合题194: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 194,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_195",
+    "question": "Java综合题195: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 195,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_196",
+    "question": "Java综合题196: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 196,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_197",
+    "question": "Java综合题197: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 197,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_198",
+    "question": "Java综合题198: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 198,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_199",
+    "question": "Java综合题199: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 199,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "java",
+    "questionId": "java_200",
+    "question": "Java综合题200: JVM内存模型中堆区存放什么?",
+    "options": [
+      "局部变量",
+      "对象实例",
+      "方法代码",
+      "常量池"
+    ],
+    "correctIndex": 1,
+    "explanation": "堆区存放对象实例和数组。",
+    "difficulty": 1,
+    "orderIndex": 200,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  }
+]

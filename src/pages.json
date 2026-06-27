@@ -1,0 +1,88 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+    }
+  },
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": { "navigationBarTitleText": "WorkQuery", "navigationStyle": "custom" }
+    },
+    {
+      "path": "pages/banks/index",
+      "style": { "navigationBarTitleText": "题库" }
+    },
+    {
+      "path": "pages/study/mode-select",
+      "style": { "navigationBarTitleText": "选择模式" }
+    },
+    {
+      "path": "pages/study/answer",
+      "style": { "navigationBarTitleText": "刷题" }
+    },
+    {
+      "path": "pages/reference/index",
+      "style": { "navigationBarTitleText": "速查" }
+    },
+    {
+      "path": "pages/reference/list",
+      "style": { "navigationBarTitleText": "知识点" }
+    },
+    {
+      "path": "pages/reference/detail",
+      "style": { "navigationBarTitleText": "知识点详情" }
+    },
+    {
+      "path": "pages/reference/search",
+      "style": { "navigationBarTitleText": "搜索" }
+    },
+    {
+      "path": "pages/mine/index",
+      "style": { "navigationBarTitleText": "我的" }
+    },
+    {
+      "path": "pages/mine/wrong-questions",
+      "style": { "navigationBarTitleText": "错题本" }
+    },
+    {
+      "path": "pages/mine/favorites",
+      "style": { "navigationBarTitleText": "收藏夹" }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "WorkQuery",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#F5F5F5",
+    "backgroundColorTop": "#F5F5F5",
+    "backgroundColorBottom": "#F5F5F5"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#007AFF",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/banks/index",
+        "text": "题库",
+        "iconPath": "static/tab-bank.png",
+        "selectedIconPath": "static/tab-bank-active.png"
+      },
+      {
+        "pagePath": "pages/reference/index",
+        "text": "速查",
+        "iconPath": "static/tab-search.png",
+        "selectedIconPath": "static/tab-search-active.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "static/tab-mine.png",
+        "selectedIconPath": "static/tab-mine-active.png"
+      }
+    ]
+  }
+}

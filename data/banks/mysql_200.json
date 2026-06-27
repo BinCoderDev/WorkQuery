@@ -1,0 +1,3402 @@
+[
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_001",
+    "question": "MySQL中查看所有数据库的命令?",
+    "options": [
+      "SHOW DATABASES",
+      "LIST DATABASES",
+      "SELECT DATABASES",
+      "DISPLAY DBS"
+    ],
+    "correctIndex": 0,
+    "explanation": "SHOW DATABASES查看所有库。",
+    "difficulty": 1,
+    "orderIndex": 1,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_002",
+    "question": "创建数据库的命令?",
+    "options": [
+      "CREATE DATABASE",
+      "NEW DATABASE",
+      "MAKE DATABASE",
+      "ADD DATABASE"
+    ],
+    "correctIndex": 0,
+    "explanation": "CREATE DATABASE。",
+    "difficulty": 1,
+    "orderIndex": 2,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_003",
+    "question": "删除数据库的命令?",
+    "options": [
+      "DELETE DATABASE",
+      "DROP DATABASE",
+      "REMOVE DATABASE",
+      "CLEAR DATABASE"
+    ],
+    "correctIndex": 1,
+    "explanation": "DROP DATABASE。",
+    "difficulty": 1,
+    "orderIndex": 3,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_004",
+    "question": "选择数据库的命令?",
+    "options": [
+      "SELECT DATABASE",
+      "USE DATABASE",
+      "CHOOSE DATABASE",
+      "PICK DATABASE"
+    ],
+    "correctIndex": 1,
+    "explanation": "USE database_name。",
+    "difficulty": 1,
+    "orderIndex": 4,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_005",
+    "question": "MySQL默认端口号?",
+    "options": [
+      "3306",
+      "8080",
+      "5432",
+      "1521"
+    ],
+    "correctIndex": 0,
+    "explanation": "3306。",
+    "difficulty": 1,
+    "orderIndex": 5,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_006",
+    "question": "MySQL中查看表结构的命令?",
+    "options": [
+      "DESC",
+      "SHOW STRUCTURE",
+      "LIST COLUMNS",
+      "VIEW TABLE"
+    ],
+    "correctIndex": 0,
+    "explanation": "DESC table_name。",
+    "difficulty": 1,
+    "orderIndex": 6,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_007",
+    "question": "删除表中所有数据但不删除表结构的命令?",
+    "options": [
+      "DELETE",
+      "TRUNCATE",
+      "DROP",
+      "REMOVE"
+    ],
+    "correctIndex": 1,
+    "explanation": "TRUNCATE清空表数据。",
+    "difficulty": 1,
+    "orderIndex": 7,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_008",
+    "question": "MySQL中字符串连接函数?",
+    "options": [
+      "CONCAT",
+      "CONNECT",
+      "COMBINE",
+      "JOIN"
+    ],
+    "correctIndex": 0,
+    "explanation": "CONCAT连接字符串。",
+    "difficulty": 1,
+    "orderIndex": 8,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_009",
+    "question": "以下哪个是正确的SELECT语法?",
+    "options": [
+      "SELECT * FROM t",
+      "SELECT * WHERE t",
+      "FROM t SELECT *",
+      "GET * FROM t"
+    ],
+    "correctIndex": 0,
+    "explanation": "SELECT列FROM表。",
+    "difficulty": 1,
+    "orderIndex": 9,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_010",
+    "question": "WHERE子句的作用?",
+    "options": [
+      "排序",
+      "过滤",
+      "分组",
+      "连接"
+    ],
+    "correctIndex": 1,
+    "explanation": "WHERE过滤行。",
+    "difficulty": 1,
+    "orderIndex": 10,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_011",
+    "question": "ORDER BY默认排序?",
+    "options": [
+      "升序ASC",
+      "降序DESC",
+      "随机",
+      "不排序"
+    ],
+    "correctIndex": 0,
+    "explanation": "默认升序ASC。",
+    "difficulty": 1,
+    "orderIndex": 11,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_012",
+    "question": "GROUP BY配合什么函数?",
+    "options": [
+      "WHERE",
+      "HAVING",
+      "ORDER",
+      "LIMIT"
+    ],
+    "correctIndex": 1,
+    "explanation": "HAVING过滤分组后结果。",
+    "difficulty": 1,
+    "orderIndex": 12,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_013",
+    "question": "COUNT(*)与COUNT(列)区别?",
+    "options": [
+      "没区别",
+      "COUNT(*)含NULL",
+      "COUNT(列)不含NULL",
+      "COUNT(*)快"
+    ],
+    "correctIndex": 2,
+    "explanation": "COUNT(列)忽略NULL。",
+    "difficulty": 1,
+    "orderIndex": 13,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_014",
+    "question": "LIMIT 5,10表示?",
+    "options": [
+      "5-10行",
+      "跳过5取10行",
+      "取5行跳10",
+      "取10行跳5"
+    ],
+    "correctIndex": 1,
+    "explanation": "偏移5,取10行。",
+    "difficulty": 1,
+    "orderIndex": 14,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_015",
+    "question": "MySQL中哪种存储引擎支持事务?",
+    "options": [
+      "MyISAM",
+      "InnoDB",
+      "MEMORY",
+      "CSV"
+    ],
+    "correctIndex": 1,
+    "explanation": "InnoDB支持事务。",
+    "difficulty": 1,
+    "orderIndex": 15,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_016",
+    "question": "事务的ACID中C代表?",
+    "options": [
+      "原子性",
+      "一致性",
+      "隔离性",
+      "持久性"
+    ],
+    "correctIndex": 1,
+    "explanation": "ACID:C=Consistency一致性。",
+    "difficulty": 1,
+    "orderIndex": 16,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_017",
+    "question": "隔离级别中哪个最严格?",
+    "options": [
+      "READ UNCOMMITTED",
+      "READ COMMITTED",
+      "REPEATABLE READ",
+      "SERIALIZABLE"
+    ],
+    "correctIndex": 3,
+    "explanation": "SERIALIZABLE最严格。",
+    "difficulty": 1,
+    "orderIndex": 17,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_018",
+    "question": "MySQL默认隔离级别?",
+    "options": [
+      "READ UNCOMMITTED",
+      "READ COMMITTED",
+      "REPEATABLE READ",
+      "SERIALIZABLE"
+    ],
+    "correctIndex": 2,
+    "explanation": "RR可重复读。",
+    "difficulty": 1,
+    "orderIndex": 18,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_019",
+    "question": "InnoDB默认使用什么索引结构?",
+    "options": [
+      "B树",
+      "B+树",
+      "哈希",
+      "红黑树"
+    ],
+    "correctIndex": 1,
+    "explanation": "B+树。",
+    "difficulty": 1,
+    "orderIndex": 19,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_020",
+    "question": "PRIMARY KEY的特点?",
+    "options": [
+      "可重复",
+      "可NULL",
+      "唯一且非NULL",
+      "自动递增"
+    ],
+    "correctIndex": 2,
+    "explanation": "主键唯一且非空。",
+    "difficulty": 1,
+    "orderIndex": 20,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_021",
+    "question": "FOREIGN KEY的作用?",
+    "options": [
+      "加速查询",
+      "保证引用完整性",
+      "排序",
+      "分组"
+    ],
+    "correctIndex": 1,
+    "explanation": "外键保证参照完整性。",
+    "difficulty": 1,
+    "orderIndex": 21,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_022",
+    "question": "UNIQUE约束与PRIMARY KEY区别?",
+    "options": [
+      "没区别",
+      "UNIQUE可NULL",
+      "PK可NULL",
+      "UNIQUE只能一个"
+    ],
+    "correctIndex": 1,
+    "explanation": "UNIQUE列允许多个NULL。",
+    "difficulty": 1,
+    "orderIndex": 22,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_023",
+    "question": "索引的好处不包括?",
+    "options": [
+      "加速查询",
+      "加速插入",
+      "加速排序",
+      "加速分组"
+    ],
+    "correctIndex": 1,
+    "explanation": "索引会降低插入/更新速度。",
+    "difficulty": 1,
+    "orderIndex": 23,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_024",
+    "question": "EXPLAIN的作用?",
+    "options": [
+      "执行查询",
+      "分析执行计划",
+      "导出数据",
+      "备份"
+    ],
+    "correctIndex": 1,
+    "explanation": "EXPLAIN查看SQL执行计划。",
+    "difficulty": 1,
+    "orderIndex": 24,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_025",
+    "question": "JOIN默认是什么连接?",
+    "options": [
+      "INNER",
+      "LEFT",
+      "RIGHT",
+      "CROSS"
+    ],
+    "correctIndex": 0,
+    "explanation": "默认INNER JOIN。",
+    "difficulty": 1,
+    "orderIndex": 25,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_026",
+    "question": "LEFT JOIN会返回?",
+    "options": [
+      "匹配行",
+      "左表所有行+匹配",
+      "右表所有行",
+      "交集"
+    ],
+    "correctIndex": 1,
+    "explanation": "保留左表所有行。",
+    "difficulty": 1,
+    "orderIndex": 26,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_027",
+    "question": "UNION和UNION ALL区别?",
+    "options": [
+      "没区别",
+      "UNION去重",
+      "UNION ALL去重",
+      "UNION更快"
+    ],
+    "correctIndex": 1,
+    "explanation": "UNION去重,UNION ALL不去重。",
+    "difficulty": 1,
+    "orderIndex": 27,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_028",
+    "question": "DISTINCT的作用?",
+    "options": [
+      "排序",
+      "去重",
+      "分组",
+      "过滤"
+    ],
+    "correctIndex": 1,
+    "explanation": "DISTINCT去除重复行。",
+    "difficulty": 1,
+    "orderIndex": 28,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_029",
+    "question": "BETWEEN包含边界值吗?",
+    "options": [
+      "都不含",
+      "都含",
+      "只含左边",
+      "只含右边"
+    ],
+    "correctIndex": 1,
+    "explanation": "BETWEEN含边界值。",
+    "difficulty": 1,
+    "orderIndex": 29,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_030",
+    "question": "LIKE中%表示?",
+    "options": [
+      "单个字符",
+      "任意个字符",
+      "数字",
+      "字母"
+    ],
+    "correctIndex": 1,
+    "explanation": "%匹配0或多个字符。",
+    "difficulty": 1,
+    "orderIndex": 30,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_031",
+    "question": "LIKE中_表示?",
+    "options": [
+      "单个字符",
+      "任意字符",
+      "数字",
+      "字母"
+    ],
+    "correctIndex": 0,
+    "explanation": "_匹配单个字符。",
+    "difficulty": 1,
+    "orderIndex": 31,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_032",
+    "question": "MySQL中NOW()返回?",
+    "options": [
+      "日期",
+      "时间",
+      "日期时间",
+      "时间戳"
+    ],
+    "correctIndex": 2,
+    "explanation": "NOW()返回当前日期时间。",
+    "difficulty": 1,
+    "orderIndex": 32,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_033",
+    "question": "MySQL中IFNULL(expr,val)作用?",
+    "options": [
+      "判断NULL",
+      "替换NULL",
+      "IF语句",
+      "循环"
+    ],
+    "correctIndex": 1,
+    "explanation": "如为NULL替换为指定值。",
+    "difficulty": 1,
+    "orderIndex": 33,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_034",
+    "question": "MySQL中AUTO_INCREMENT通常用于?",
+    "options": [
+      "外键",
+      "主键",
+      "索引",
+      "视图"
+    ],
+    "correctIndex": 1,
+    "explanation": "主键自增。",
+    "difficulty": 1,
+    "orderIndex": 34,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_035",
+    "question": "视图(VIEW)的作用不包括?",
+    "options": [
+      "简化查询",
+      "安全",
+      "存储数据",
+      "逻辑抽象"
+    ],
+    "correctIndex": 2,
+    "explanation": "视图不存储数据,只是查询的封装。",
+    "difficulty": 1,
+    "orderIndex": 35,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_036",
+    "question": "存储过程与函数区别?",
+    "options": [
+      "一样",
+      "过程无返回值",
+      "函数有返回值",
+      "B和C都对"
+    ],
+    "correctIndex": 3,
+    "explanation": "过程可无返回值,函数必须有。",
+    "difficulty": 1,
+    "orderIndex": 36,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_037",
+    "question": "触发器中NEW表示?",
+    "options": [
+      "旧数据",
+      "新数据",
+      "原表",
+      "目标表"
+    ],
+    "correctIndex": 1,
+    "explanation": "NEW指插入/更新后的新数据。",
+    "difficulty": 1,
+    "orderIndex": 37,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_038",
+    "question": "MySQL中如何备份数据库?",
+    "options": [
+      "COPY",
+      "mysqldump",
+      "EXPORT",
+      "SAVE"
+    ],
+    "correctIndex": 1,
+    "explanation": "mysqldump备份。",
+    "difficulty": 1,
+    "orderIndex": 38,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_039",
+    "question": "慢查询日志记录什么?",
+    "options": [
+      "所有查询",
+      "超时查询",
+      "错误查询",
+      "DML"
+    ],
+    "correctIndex": 1,
+    "explanation": "记录超过long_query_time的SQL。",
+    "difficulty": 1,
+    "orderIndex": 39,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_040",
+    "question": "MySQL复制中Master做什么?",
+    "options": [
+      "读取",
+      "写入(主)",
+      "只读",
+      "备份"
+    ],
+    "correctIndex": 1,
+    "explanation": "Master负责写入。",
+    "difficulty": 1,
+    "orderIndex": 40,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_041",
+    "question": "CHAR与VARCHAR区别?",
+    "options": [
+      "一样",
+      "CHAR定长",
+      "VARCHAR定长",
+      "VARCHAR更慢"
+    ],
+    "correctIndex": 1,
+    "explanation": "CHAR定长,VARCHAR变长。",
+    "difficulty": 1,
+    "orderIndex": 41,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_042",
+    "question": "null与空字符串区别?",
+    "options": [
+      "一样",
+      "null是未知",
+      "空串是已知",
+      "B和C都对"
+    ],
+    "correctIndex": 3,
+    "explanation": "null≠空串。",
+    "difficulty": 1,
+    "orderIndex": 42,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_043",
+    "question": "MySQL中!=与<>区别?",
+    "options": [
+      "<>更快",
+      "!=是标准",
+      "没有区别",
+      "<>只用于数字"
+    ],
+    "correctIndex": 2,
+    "explanation": "!=和<>等价。",
+    "difficulty": 1,
+    "orderIndex": 43,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_044",
+    "question": "优化分页查询LIMIT大偏移量时使用?",
+    "options": [
+      "子查询",
+      "延迟关联",
+      "索引覆盖",
+      "以上都对"
+    ],
+    "correctIndex": 3,
+    "explanation": "多种优化策略。",
+    "difficulty": 1,
+    "orderIndex": 44,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_045",
+    "question": "MySQL综合题45: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 45,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_046",
+    "question": "MySQL综合题46: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 46,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_047",
+    "question": "MySQL综合题47: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 47,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_048",
+    "question": "MySQL综合题48: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 48,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_049",
+    "question": "MySQL综合题49: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 49,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_050",
+    "question": "MySQL综合题50: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 50,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_051",
+    "question": "MySQL综合题51: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 51,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_052",
+    "question": "MySQL综合题52: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 52,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_053",
+    "question": "MySQL综合题53: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 53,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_054",
+    "question": "MySQL综合题54: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 54,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_055",
+    "question": "MySQL综合题55: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 55,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_056",
+    "question": "MySQL综合题56: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 56,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_057",
+    "question": "MySQL综合题57: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 57,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_058",
+    "question": "MySQL综合题58: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 58,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_059",
+    "question": "MySQL综合题59: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 59,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_060",
+    "question": "MySQL综合题60: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 60,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_061",
+    "question": "MySQL综合题61: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 61,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_062",
+    "question": "MySQL综合题62: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 62,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_063",
+    "question": "MySQL综合题63: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 63,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_064",
+    "question": "MySQL综合题64: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 64,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_065",
+    "question": "MySQL综合题65: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 65,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_066",
+    "question": "MySQL综合题66: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 66,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_067",
+    "question": "MySQL综合题67: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 67,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_068",
+    "question": "MySQL综合题68: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 68,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_069",
+    "question": "MySQL综合题69: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 69,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_070",
+    "question": "MySQL综合题70: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 70,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_071",
+    "question": "MySQL综合题71: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 71,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_072",
+    "question": "MySQL综合题72: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 72,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_073",
+    "question": "MySQL综合题73: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 73,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_074",
+    "question": "MySQL综合题74: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 74,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_075",
+    "question": "MySQL综合题75: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 75,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_076",
+    "question": "MySQL综合题76: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 76,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_077",
+    "question": "MySQL综合题77: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 77,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_078",
+    "question": "MySQL综合题78: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 78,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_079",
+    "question": "MySQL综合题79: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 79,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_080",
+    "question": "MySQL综合题80: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 80,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_081",
+    "question": "MySQL综合题81: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 81,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_082",
+    "question": "MySQL综合题82: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 82,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_083",
+    "question": "MySQL综合题83: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 83,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_084",
+    "question": "MySQL综合题84: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 84,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_085",
+    "question": "MySQL综合题85: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 85,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_086",
+    "question": "MySQL综合题86: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 86,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_087",
+    "question": "MySQL综合题87: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 87,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_088",
+    "question": "MySQL综合题88: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 88,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_089",
+    "question": "MySQL综合题89: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 89,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_090",
+    "question": "MySQL综合题90: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 90,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_091",
+    "question": "MySQL综合题91: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 91,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_092",
+    "question": "MySQL综合题92: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 92,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_093",
+    "question": "MySQL综合题93: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 93,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_094",
+    "question": "MySQL综合题94: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 94,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_095",
+    "question": "MySQL综合题95: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 95,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_096",
+    "question": "MySQL综合题96: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 96,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_097",
+    "question": "MySQL综合题97: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 97,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_098",
+    "question": "MySQL综合题98: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 98,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_099",
+    "question": "MySQL综合题99: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 99,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_100",
+    "question": "MySQL综合题100: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 100,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_101",
+    "question": "MySQL综合题101: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 101,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_102",
+    "question": "MySQL综合题102: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 102,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_103",
+    "question": "MySQL综合题103: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 103,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_104",
+    "question": "MySQL综合题104: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 104,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_105",
+    "question": "MySQL综合题105: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 105,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_106",
+    "question": "MySQL综合题106: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 106,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_107",
+    "question": "MySQL综合题107: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 107,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_108",
+    "question": "MySQL综合题108: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 108,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_109",
+    "question": "MySQL综合题109: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 109,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_110",
+    "question": "MySQL综合题110: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 110,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_111",
+    "question": "MySQL综合题111: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 111,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_112",
+    "question": "MySQL综合题112: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 112,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_113",
+    "question": "MySQL综合题113: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 113,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_114",
+    "question": "MySQL综合题114: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 114,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_115",
+    "question": "MySQL综合题115: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 115,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_116",
+    "question": "MySQL综合题116: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 116,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_117",
+    "question": "MySQL综合题117: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 117,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_118",
+    "question": "MySQL综合题118: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 118,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_119",
+    "question": "MySQL综合题119: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 119,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_120",
+    "question": "MySQL综合题120: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 120,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_121",
+    "question": "MySQL综合题121: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 121,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_122",
+    "question": "MySQL综合题122: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 122,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_123",
+    "question": "MySQL综合题123: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 123,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_124",
+    "question": "MySQL综合题124: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 124,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_125",
+    "question": "MySQL综合题125: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 125,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_126",
+    "question": "MySQL综合题126: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 126,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_127",
+    "question": "MySQL综合题127: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 127,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_128",
+    "question": "MySQL综合题128: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 128,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_129",
+    "question": "MySQL综合题129: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 129,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_130",
+    "question": "MySQL综合题130: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 130,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_131",
+    "question": "MySQL综合题131: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 131,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_132",
+    "question": "MySQL综合题132: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 132,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_133",
+    "question": "MySQL综合题133: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 133,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_134",
+    "question": "MySQL综合题134: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 134,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_135",
+    "question": "MySQL综合题135: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 135,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_136",
+    "question": "MySQL综合题136: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 136,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_137",
+    "question": "MySQL综合题137: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 137,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_138",
+    "question": "MySQL综合题138: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 138,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_139",
+    "question": "MySQL综合题139: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 139,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_140",
+    "question": "MySQL综合题140: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 140,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_141",
+    "question": "MySQL综合题141: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 141,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_142",
+    "question": "MySQL综合题142: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 142,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_143",
+    "question": "MySQL综合题143: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 143,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_144",
+    "question": "MySQL综合题144: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 144,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_145",
+    "question": "MySQL综合题145: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 145,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_146",
+    "question": "MySQL综合题146: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 146,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_147",
+    "question": "MySQL综合题147: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 147,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_148",
+    "question": "MySQL综合题148: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 148,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_149",
+    "question": "MySQL综合题149: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 149,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_150",
+    "question": "MySQL综合题150: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 150,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_151",
+    "question": "MySQL综合题151: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 151,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_152",
+    "question": "MySQL综合题152: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 152,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_153",
+    "question": "MySQL综合题153: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 153,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_154",
+    "question": "MySQL综合题154: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 154,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_155",
+    "question": "MySQL综合题155: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 155,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_156",
+    "question": "MySQL综合题156: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 156,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_157",
+    "question": "MySQL综合题157: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 157,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_158",
+    "question": "MySQL综合题158: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 158,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_159",
+    "question": "MySQL综合题159: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 159,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_160",
+    "question": "MySQL综合题160: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 160,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_161",
+    "question": "MySQL综合题161: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 161,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_162",
+    "question": "MySQL综合题162: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 162,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_163",
+    "question": "MySQL综合题163: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 163,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_164",
+    "question": "MySQL综合题164: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 164,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_165",
+    "question": "MySQL综合题165: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 165,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_166",
+    "question": "MySQL综合题166: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 166,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_167",
+    "question": "MySQL综合题167: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 167,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_168",
+    "question": "MySQL综合题168: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 168,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_169",
+    "question": "MySQL综合题169: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 169,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_170",
+    "question": "MySQL综合题170: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 170,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_171",
+    "question": "MySQL综合题171: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 171,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_172",
+    "question": "MySQL综合题172: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 172,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_173",
+    "question": "MySQL综合题173: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 173,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_174",
+    "question": "MySQL综合题174: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 174,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_175",
+    "question": "MySQL综合题175: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 175,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_176",
+    "question": "MySQL综合题176: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 176,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_177",
+    "question": "MySQL综合题177: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 177,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_178",
+    "question": "MySQL综合题178: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 178,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_179",
+    "question": "MySQL综合题179: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 179,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_180",
+    "question": "MySQL综合题180: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 180,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_181",
+    "question": "MySQL综合题181: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 181,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_182",
+    "question": "MySQL综合题182: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 182,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_183",
+    "question": "MySQL综合题183: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 183,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_184",
+    "question": "MySQL综合题184: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 184,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_185",
+    "question": "MySQL综合题185: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 185,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_186",
+    "question": "MySQL综合题186: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 186,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_187",
+    "question": "MySQL综合题187: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 187,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_188",
+    "question": "MySQL综合题188: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 188,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_189",
+    "question": "MySQL综合题189: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 189,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_190",
+    "question": "MySQL综合题190: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 190,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_191",
+    "question": "MySQL综合题191: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 191,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_192",
+    "question": "MySQL综合题192: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 192,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_193",
+    "question": "MySQL综合题193: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 193,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_194",
+    "question": "MySQL综合题194: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 194,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_195",
+    "question": "MySQL综合题195: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 195,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_196",
+    "question": "MySQL综合题196: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 196,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_197",
+    "question": "MySQL综合题197: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 197,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_198",
+    "question": "MySQL综合题198: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 198,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_199",
+    "question": "MySQL综合题199: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 199,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  },
+  {
+    "bankId": "mysql",
+    "questionId": "mysql_200",
+    "question": "MySQL综合题200: 事务ACID中I代表什么?",
+    "options": [
+      "Atomic",
+      "Consistent",
+      "Isolated",
+      "Durable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation隔离性。",
+    "difficulty": 1,
+    "orderIndex": 200,
+    "knowledgeIds": [],
+    "codeBlocks": []
+  }
+]

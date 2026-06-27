@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/banks/index",
+    "pages/study/mode-select",
+    "pages/study/answer",
+    "pages/reference/index",
+    "pages/reference/list",
+    "pages/reference/detail",
+    "pages/reference/search",
+    "pages/mine/index",
+    "pages/mine/wrong-questions",
+    "pages/mine/favorites"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "WorkQuery",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#F5F5F5",
+    "backgroundColorTop": "#F5F5F5",
+    "backgroundColorBottom": "#F5F5F5"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#007AFF",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/banks/index",
+        "text": "题库",
+        "iconPath": "static/tab-bank.png",
+        "selectedIconPath": "static/tab-bank-active.png"
+      },
+      {
+        "pagePath": "pages/reference/index",
+        "text": "速查",
+        "iconPath": "static/tab-search.png",
+        "selectedIconPath": "static/tab-search-active.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "static/tab-mine.png",
+        "selectedIconPath": "static/tab-mine-active.png"
+      }
+    ]
+  },
+  "permission": {},
+  "requiredPrivateInfos": [],
+  "usingComponents": {}
+}

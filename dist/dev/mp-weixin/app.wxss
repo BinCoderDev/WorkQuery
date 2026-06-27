@@ -1,0 +1,23 @@
+/* uni-app 全局 SCSS 变量 */
+/* 全局 CSS 变量 — 浅色主题（默认） */
+page {
+  min-height: 100vh;
+  overflow-y: auto;
+  --bg-primary: #F5F5F5;
+  --bg-card: #FFFFFF;
+  --text-primary: #1A1A1A;
+  --text-secondary: #666666;
+  --text-hint: #999999;
+  --border-color: #E5E5E5;
+  --color-primary: #007AFF;
+  --color-success: #07C160;
+  --color-danger: #FA5151;
+  --color-warning: #FFC300;
+  --shadow-sm: 0 2rpx 8rpx rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4rpx 16rpx rgba(0, 0, 0, 0.1);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", sans-serif;
+  font-size: 28rpx;
+  line-height: 1.6;
+}page{--status-bar-height:25px;--top-window-height:0px;--window-top:0px;--window-bottom:0px;--window-left:0px;--window-right:0px;--window-magin:0px}[data-c-h="true"]{display: none !important;}

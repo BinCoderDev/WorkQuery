@@ -1,0 +1,30 @@
+{
+  "name": "WorkQuery",
+  "appid": "__UNI__XXXXXXX",
+  "description": "职场技能速查刷题小程序",
+  "versionName": "1.0.0",
+  "versionCode": "100",
+  "transformPx": false,
+  "mp-weixin": {
+    "appid": "请填写你的微信小程序AppID",
+    "setting": {
+      "urlCheck": true,
+      "minified": true,
+      "es6": true,
+      "enhance": true,
+      "postcss": true,
+      "preloadBackgroundData": false
+    },
+    "usingComponents": true,
+    "cloudfunctionRoot": "cloudfunctions/",
+    "permission": {},
+    "requiredPrivateInfos": [],
+    "optimization": {
+      "subPackages": true
+    }
+  },
+  "uniStatistics": {
+    "enable": false
+  },
+  "vueVersion": "3"
+}

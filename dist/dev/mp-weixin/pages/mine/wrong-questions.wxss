@@ -1,0 +1,59 @@
+/* uni-app 全局 SCSS 变量 */
+.container.data-v-dafb905f {
+  padding: 24rpx;
+}
+.filter-tabs.data-v-dafb905f {
+  display: flex;
+  gap: 24rpx;
+  padding: 16rpx 0 24rpx;
+  font-size: 26rpx;
+  color: var(--text-secondary);
+  align-items: center;
+}
+.filter-tabs .active.data-v-dafb905f {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+.clear-btn.data-v-dafb905f {
+  margin-left: auto;
+  color: var(--color-danger);
+}
+.empty.data-v-dafb905f {
+  text-align: center;
+  padding: 120rpx 0;
+}
+.empty-icon.data-v-dafb905f {
+  font-size: 64rpx;
+  display: block;
+  margin-bottom: 16rpx;
+}
+.empty-text.data-v-dafb905f {
+  font-size: 28rpx;
+  color: var(--text-hint);
+}
+.item.data-v-dafb905f {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24rpx;
+  background: var(--bg-card);
+  border-radius: 12rpx;
+  margin-bottom: 16rpx;
+  box-shadow: var(--shadow-sm);
+}
+.item-preview.data-v-dafb905f {
+  font-size: 28rpx;
+  color: var(--text-primary);
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.item-count.data-v-dafb905f {
+  font-size: 24rpx;
+  color: var(--color-danger);
+  margin-left: 16rpx;
+  padding: 4rpx 12rpx;
+  background: #fff0f0;
+  border-radius: 8rpx;
+}

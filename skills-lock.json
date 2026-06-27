@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "vibe-coding-standard-workflow": {
+      "source": "WoodyXu/vibe-coding-standard-workflow",
+      "sourceType": "github",
+      "skillPath": "skills/vibe-coding-standard-workflow/SKILL.md",
+      "computedHash": "4a5a24d07c482fdddecaefceecfc1cd367bab7f558f94527fd01d5ffeaa29c0d"
+    },
+    "web-design-guidelines": {
+      "source": "OpenBMB/PilotDeck",
+      "sourceType": "github",
+      "skillPath": "skills/web-design-guidelines/SKILL.md",
+      "computedHash": "9ffad3c12285d5e759b331073958a96ce0e9d1845c81cf62ab4d93f6896e910f"
+    }
+  }
+}

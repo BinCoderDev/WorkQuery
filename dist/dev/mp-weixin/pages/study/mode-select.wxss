@@ -1,0 +1,64 @@
+/* uni-app 全局 SCSS 变量 */
+.container.data-v-fbad3b57 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64rpx 48rpx;
+}
+.bank-name.data-v-fbad3b57 {
+  font-size: 40rpx;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.bank-count.data-v-fbad3b57 {
+  font-size: 26rpx;
+  color: var(--text-secondary);
+  margin-top: 8rpx;
+  margin-bottom: 56rpx;
+}
+.mode-buttons.data-v-fbad3b57 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 28rpx;
+}
+.mode-btn.data-v-fbad3b57 {
+  padding: 36rpx 40rpx;
+  border-radius: 16rpx;
+  background: var(--bg-card);
+  box-shadow: var(--shadow-sm);
+}
+.mode-btn.data-v-fbad3b57:active {
+  transform: scale(0.98);
+}
+.btn-title.data-v-fbad3b57 {
+  display: block;
+  font-size: 34rpx;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.btn-desc.data-v-fbad3b57 {
+  display: block;
+  font-size: 24rpx;
+  color: var(--text-hint);
+  margin-top: 8rpx;
+}
+.btn-hint.data-v-fbad3b57 {
+  display: block;
+  margin-top: 12rpx;
+  padding: 8rpx 16rpx;
+  background: #e8f4fd;
+  color: var(--color-primary);
+  font-size: 24rpx;
+  border-radius: 8rpx;
+  text-align: center;
+}
+.complete-hint.data-v-fbad3b57 {
+  margin-top: 48rpx;
+  padding: 24rpx;
+  background: #f0f9f0;
+  border-radius: 12rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: var(--color-success);
+}

@@ -1,0 +1,236 @@
+[
+  {
+    "knowledgeId": "mysql_know_001",
+    "categoryId": "mysql",
+    "categoryName": "MySQL数据库",
+    "title": "SQL基础 SELECT/WHERE/ORDER/LIMIT",
+    "group": "SQL语法",
+    "definition": "SELECT查询数据,WHERE过滤行,ORDER BY排序(ASC升序/DESC降序),LIMIT限制行数。DISTINCT去重,BETWEEN范围查询,LIKE模糊匹配,IN集合匹配。",
+    "syntax": "SELECT 列名 FROM 表名 WHERE 条件 ORDER BY 列 LIMIT n",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "查询并排序",
+        "description": "查询成绩>60的学生,按成绩降序",
+        "code": "SELECT name, score FROM students WHERE score > 60 ORDER BY score DESC LIMIT 10;",
+        "codeHtml": "<span style=\"color:#569CD6\">SELECT</span> name, score <span style=\"color:#569CD6\">FROM</span> students <span style=\"color:#569CD6\">WHERE</span> score > 60 <span style=\"color:#569CD6\">ORDER BY</span> score <span style=\"color:#569CD6\">DESC LIMIT</span> 10;"
+      }
+    ],
+    "tags": [
+      "SQL",
+      "查询",
+      "基础"
+    ],
+    "usageFrequency": 99,
+    "relatedQuestionIds": [
+      "mysql_001",
+      "mysql_002",
+      "mysql_003",
+      "mysql_004",
+      "mysql_005"
+    ]
+  },
+  {
+    "knowledgeId": "mysql_know_002",
+    "categoryId": "mysql",
+    "categoryName": "MySQL数据库",
+    "title": "CREATE/INSERT/UPDATE/DELETE 增删改",
+    "group": "SQL语法",
+    "definition": "CREATE TABLE创建表(含列名/类型/约束)。INSERT INTO插入数据。UPDATE SET修改数据。DELETE FROM删除数据。TRUNCATE清空表(不可回滚)。",
+    "syntax": "INSERT INTO table(col1,col2) VALUES(v1,v2);\nUPDATE table SET col=v WHERE cond;\nDELETE FROM table WHERE cond;",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "创建表并插入",
+        "description": "建学生表并添加数据",
+        "code": "CREATE TABLE students (\n  id INT PRIMARY KEY AUTO_INCREMENT,\n  name VARCHAR(50) NOT NULL,\n  score INT DEFAULT 0\n);\nINSERT INTO students(name,score) VALUES('张三',85);",
+        "codeHtml": "<span style=\"color:#569CD6\">CREATE TABLE</span> students (<br>  id <span style=\"color:#569CD6\">INT PRIMARY KEY AUTO_INCREMENT</span>,<br>  name <span style=\"color:#569CD6\">VARCHAR</span>(50) <span style=\"color:#569CD6\">NOT NULL</span><br>);"
+      }
+    ],
+    "tags": [
+      "SQL",
+      "增删改",
+      "基础"
+    ],
+    "usageFrequency": 97,
+    "relatedQuestionIds": [
+      "mysql_006",
+      "mysql_007",
+      "mysql_008",
+      "mysql_009"
+    ]
+  },
+  {
+    "knowledgeId": "mysql_know_003",
+    "categoryId": "mysql",
+    "categoryName": "MySQL数据库",
+    "title": "JOIN 多表连接",
+    "group": "SQL语法",
+    "definition": "INNER JOIN返回两表匹配行。LEFT JOIN保留左表全部行。RIGHT JOIN保留右表。FULL JOIN保留全部(MySQL需用UNION模拟)。ON指定连接条件。",
+    "syntax": "SELECT * FROM a INNER JOIN b ON a.id = b.a_id",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "LEFT JOIN",
+        "description": "查所有学生及其成绩(含无成绩的)",
+        "code": "SELECT s.name, sc.score\nFROM students s\nLEFT JOIN scores sc ON s.id = sc.student_id;",
+        "codeHtml": "<span style=\"color:#569CD6\">SELECT</span> s.name, sc.score<br><span style=\"color:#569CD6\">FROM</span> students s<br><span style=\"color:#569CD6\">LEFT JOIN</span> scores sc <span style=\"color:#569CD6\">ON</span> s.id = sc.student_id;"
+      }
+    ],
+    "tags": [
+      "JOIN",
+      "多表",
+      "必考"
+    ],
+    "usageFrequency": 95,
+    "relatedQuestionIds": [
+      "mysql_010",
+      "mysql_011",
+      "mysql_012"
+    ]
+  },
+  {
+    "knowledgeId": "mysql_know_004",
+    "categoryId": "mysql",
+    "categoryName": "MySQL数据库",
+    "title": "GROUP BY/HAVING 分组聚合",
+    "group": "SQL语法",
+    "definition": "GROUP BY按列分组。聚合函数:COUNT/SUM/AVG/MAX/MIN。HAVING过滤分组后结果(WHERE过滤分组前行)。执行顺序:WHERE→GROUP→HAVING→ORDER→LIMIT。",
+    "syntax": "SELECT col, COUNT(*) FROM t GROUP BY col HAVING COUNT(*) > 1",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "各部门统计",
+        "description": "部门人数>3的部门",
+        "code": "SELECT dept, COUNT(*) cnt, AVG(salary) avg_sal\nFROM employees\nGROUP BY dept\nHAVING COUNT(*) > 3;",
+        "codeHtml": "<span style=\"color:#569CD6\">SELECT</span> dept, <span style=\"color:#569CD6\">COUNT</span>(*) cnt<br><span style=\"color:#569CD6\">FROM</span> employees<br><span style=\"color:#569CD6\">GROUP BY</span> dept<br><span style=\"color:#569CD6\">HAVING COUNT</span>(*) > 3;"
+      }
+    ],
+    "tags": [
+      "分组",
+      "聚合",
+      "必考"
+    ],
+    "usageFrequency": 93,
+    "relatedQuestionIds": [
+      "mysql_013",
+      "mysql_014",
+      "mysql_015"
+    ]
+  },
+  {
+    "knowledgeId": "mysql_know_005",
+    "categoryId": "mysql",
+    "categoryName": "MySQL数据库",
+    "title": "索引原理 B+树",
+    "group": "索引与优化",
+    "definition": "MySQL InnoDB索引使用B+树结构。主键索引(聚簇索引)叶子节点存完整行数据。二级索引叶子节点存主键值,需回表查询。覆盖索引不回表。",
+    "syntax": "CREATE INDEX idx_name ON table(col1, col2);",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "创建索引",
+        "description": "创建复合索引",
+        "code": "CREATE INDEX idx_dept_salary ON employees(dept, salary);\nEXPLAIN SELECT * FROM employees WHERE dept='IT' AND salary>5000;",
+        "codeHtml": "<span style=\"color:#569CD6\">CREATE INDEX</span> idx ON employees(dept, salary);<br><span style=\"color:#569CD6\">EXPLAIN SELECT</span> * <span style=\"color:#569CD6\">FROM</span> employees <span style=\"color:#569CD6\">WHERE</span> dept='IT';"
+      }
+    ],
+    "tags": [
+      "索引",
+      "B+树",
+      "必考"
+    ],
+    "usageFrequency": 96,
+    "relatedQuestionIds": [
+      "mysql_016",
+      "mysql_017",
+      "mysql_018"
+    ]
+  },
+  {
+    "knowledgeId": "mysql_know_006",
+    "categoryId": "mysql",
+    "categoryName": "MySQL数据库",
+    "title": "事务 ACID 特性",
+    "group": "事务与锁",
+    "definition": "事务四大特性:Atomicity原子性(全部成功或全部回滚),Consistency一致性,Isolation隔离性(并发互不干扰),Durability持久性(提交后永久保存)。",
+    "syntax": "START TRANSACTION; ... COMMIT; 或 ROLLBACK;",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "转账事务",
+        "description": "A减B加,原子操作",
+        "code": "START TRANSACTION;\nUPDATE accounts SET balance=balance-100 WHERE id=1;\nUPDATE accounts SET balance=balance+100 WHERE id=2;\nCOMMIT;",
+        "codeHtml": "<span style=\"color:#569CD6\">START TRANSACTION</span>;<br><span style=\"color:#569CD6\">UPDATE</span> accounts <span style=\"color:#569CD6\">SET</span> balance=balance-100 <span style=\"color:#569CD6\">WHERE</span> id=1;<br><span style=\"color:#569CD6\">COMMIT</span>;"
+      }
+    ],
+    "tags": [
+      "事务",
+      "ACID",
+      "必考"
+    ],
+    "usageFrequency": 97,
+    "relatedQuestionIds": [
+      "mysql_019",
+      "mysql_020",
+      "mysql_021"
+    ]
+  },
+  {
+    "knowledgeId": "mysql_know_007",
+    "categoryId": "mysql",
+    "categoryName": "MySQL数据库",
+    "title": "隔离级别与MVCC",
+    "group": "事务与锁",
+    "definition": "4种隔离级别:READ UNCOMMITTED(脏读),READ COMMITTED(不可重复读),REPEATABLE READ(MySQL默认,幻读通过间隙锁解决),SERIALIZABLE(串行)。MVCC通过undo log+ReadView实现快照读。",
+    "syntax": "SET TRANSACTION ISOLATION LEVEL REPEATABLE READ;",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "查看隔离级别",
+        "description": "查看当前隔离级别",
+        "code": "SELECT @@transaction_isolation;\nSET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED;",
+        "codeHtml": "<span style=\"color:#569CD6\">SELECT</span> @@transaction_isolation;<br><span style=\"color:#569CD6\">SET</span> TRANSACTION ISOLATION LEVEL READ COMMITTED;"
+      }
+    ],
+    "tags": [
+      "隔离级别",
+      "MVCC",
+      "必考"
+    ],
+    "usageFrequency": 94,
+    "relatedQuestionIds": [
+      "mysql_022",
+      "mysql_023"
+    ]
+  },
+  {
+    "knowledgeId": "mysql_know_008",
+    "categoryId": "mysql",
+    "categoryName": "MySQL数据库",
+    "title": "SQL优化 EXPLAIN 执行计划",
+    "group": "索引与优化",
+    "definition": "EXPLAIN分析SQL执行计划。关注type(ALL全表→index→range→ref→const),key(使用的索引),rows(扫描行数),Extra(Using filesort/Using temporary需优化)。",
+    "syntax": "EXPLAIN SELECT * FROM t WHERE col = 'value';",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "分析查询",
+        "description": "查看是否走索引",
+        "code": "EXPLAIN SELECT * FROM orders WHERE user_id=100 AND status='paid';\n-- type:ref, key:idx_user_status → 索引有效",
+        "codeHtml": "<span style=\"color:#569CD6\">EXPLAIN SELECT</span> * <span style=\"color:#569CD6\">FROM</span> orders <span style=\"color:#569CD6\">WHERE</span> user_id=100;"
+      }
+    ],
+    "tags": [
+      "优化",
+      "EXPLAIN",
+      "必考"
+    ],
+    "usageFrequency": 91,
+    "relatedQuestionIds": [
+      "mysql_024",
+      "mysql_025",
+      "mysql_026"
+    ]
+  }
+]

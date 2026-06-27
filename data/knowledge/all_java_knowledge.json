@@ -1,0 +1,234 @@
+[
+  {
+    "knowledgeId": "java_know_001",
+    "categoryId": "java",
+    "categoryName": "Java开发",
+    "title": "Java基础 数据类型与变量",
+    "group": "基础语法",
+    "definition": "8种基本类型:byte/short/int/long/float/double/char/boolean。引用类型:String/数组/对象。包装类:Integer/Long等提供对象形式。自动装箱拆箱。",
+    "syntax": "int num = 10;\nString str = \"Hello\";\nInteger obj = num;  // 自动装箱",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "类型转换",
+        "description": "int与Integer互转",
+        "code": "int a = 100;\nInteger b = a;       // 自动装箱\nint c = b;           // 自动拆箱\nString s = String.valueOf(a);  // int→String\nint d = Integer.parseInt(\"200\");  // String→int",
+        "codeHtml": "<span style=\"color:#569CD6\">int</span> a = 100;<br><span style=\"color:#4EC9B0\">Integer</span> b = a;  <span style=\"color:#6A9955\">// 自动装箱</span>"
+      }
+    ],
+    "tags": [
+      "基础",
+      "数据类型",
+      "必考"
+    ],
+    "usageFrequency": 99,
+    "relatedQuestionIds": [
+      "java_001",
+      "java_002",
+      "java_003",
+      "java_004"
+    ]
+  },
+  {
+    "knowledgeId": "java_know_002",
+    "categoryId": "java",
+    "categoryName": "Java开发",
+    "title": "面向对象 封装/继承/多态",
+    "group": "OOP",
+    "definition": "封装:private+getter/setter隐藏细节。继承:extends复用父类代码,单继承。多态:父类引用指向子类对象,方法重写实现动态绑定。super调用父类,this当前对象。",
+    "syntax": "class Dog extends Animal {\n    @Override\n    public void speak() { System.out.println(\"汪汪\"); }\n}",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "多态示例",
+        "description": "父类引用指向子类对象",
+        "code": "Animal a = new Dog();        // 向上转型\na.speak();                    // 调用Dog的speak()\nif (a instanceof Dog) {\n    Dog d = (Dog) a;          // 向下转型\n}",
+        "codeHtml": "<span style=\"color:#4EC9B0\">Animal</span> a = <span style=\"color:#C586C0\">new</span> <span style=\"color:#4EC9B0\">Dog</span>();<br>a.speak();  <span style=\"color:#6A9955\">// 多态调用</span>"
+      }
+    ],
+    "tags": [
+      "OOP",
+      "多态",
+      "必考"
+    ],
+    "usageFrequency": 98,
+    "relatedQuestionIds": [
+      "java_005",
+      "java_006",
+      "java_007"
+    ]
+  },
+  {
+    "knowledgeId": "java_know_003",
+    "categoryId": "java",
+    "categoryName": "Java开发",
+    "title": "集合框架 List/Set/Map",
+    "group": "集合",
+    "definition": "List:有序可重复(ArrayList数组,LinkedList链表)。Set:无序不可重复(HashSet哈希,TreeSet红黑树)。Map:键值对(HashMap哈希,TreeMap红黑树排序,ConcurrentHashMap线程安全)。",
+    "syntax": "List<String> list = new ArrayList<>();\nMap<String, Integer> map = new HashMap<>();",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "集合操作",
+        "description": "List/Set/Map常用操作",
+        "code": "List<Integer> list = new ArrayList<>();\nlist.add(1); list.add(2); list.get(0);\nSet<String> set = new HashSet<>();\nset.add(\"a\"); set.contains(\"a\");\nMap<String,Integer> map = new HashMap<>();\nmap.put(\"key\",1); map.get(\"key\");",
+        "codeHtml": "<span style=\"color:#4EC9B0\">List</span>&lt;<span style=\"color:#4EC9B0\">Integer</span>&gt; list = <span style=\"color:#C586C0\">new</span> <span style=\"color:#4EC9B0\">ArrayList</span>&lt;&gt;();"
+      }
+    ],
+    "tags": [
+      "集合",
+      "List",
+      "Map",
+      "必考"
+    ],
+    "usageFrequency": 97,
+    "relatedQuestionIds": [
+      "java_008",
+      "java_009",
+      "java_010"
+    ]
+  },
+  {
+    "knowledgeId": "java_know_004",
+    "categoryId": "java",
+    "categoryName": "Java开发",
+    "title": "String/StringBuilder/StringBuffer",
+    "group": "基础语法",
+    "definition": "String不可变(每次修改创建新对象)。StringBuilder可变且线程不安全(快)。StringBuffer可变且线程安全(synchronized,慢)。字符串拼接用+底层编译为StringBuilder。",
+    "syntax": "String s = \"Hello\";\nStringBuilder sb = new StringBuilder();\nsb.append(\"a\").append(\"b\");",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "高效拼接",
+        "description": "循环中用StringBuilder",
+        "code": "StringBuilder sb = new StringBuilder();\nfor (int i = 0; i < 1000; i++) {\n    sb.append(i).append(\",\");\n}\nString result = sb.toString();",
+        "codeHtml": "<span style=\"color:#4EC9B0\">StringBuilder</span> sb = <span style=\"color:#C586C0\">new</span> <span style=\"color:#4EC9B0\">StringBuilder</span>();<br><span style=\"color:#C586C0\">for</span> (<span style=\"color:#569CD6\">int</span> i=0; i<1000; i++) sb.append(i);"
+      }
+    ],
+    "tags": [
+      "String",
+      "基础",
+      "必考"
+    ],
+    "usageFrequency": 95,
+    "relatedQuestionIds": [
+      "java_011",
+      "java_012"
+    ]
+  },
+  {
+    "knowledgeId": "java_know_005",
+    "categoryId": "java",
+    "categoryName": "Java开发",
+    "title": "多线程与锁",
+    "group": "并发",
+    "definition": "创建线程:extends Thread或implements Runnable/Callable。synchronized同步锁(方法/代码块)。volatile保证可见性+禁止重排(不保证原子性)。wait/notify需在synchronized中。",
+    "syntax": "synchronized(obj) { ... }\nvolatile boolean flag = false;",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "同步代码块",
+        "description": "锁定共享对象",
+        "code": "public class Counter {\n    private int count = 0;\n    public synchronized void increment() {\n        count++;\n    }\n}",
+        "codeHtml": "<span style=\"color:#C586C0\">public synchronized void</span> increment() {<br>    count++;<br>}"
+      }
+    ],
+    "tags": [
+      "多线程",
+      "锁",
+      "必考"
+    ],
+    "usageFrequency": 93,
+    "relatedQuestionIds": [
+      "java_013",
+      "java_014",
+      "java_015"
+    ]
+  },
+  {
+    "knowledgeId": "java_know_006",
+    "categoryId": "java",
+    "categoryName": "Java开发",
+    "title": "JVM内存模型与GC",
+    "group": "JVM",
+    "definition": "JVM内存:堆(对象实例),栈(局部变量),方法区(类信息/常量池),程序计数器。GC回收堆中无引用对象。Minor GC(年轻代),Major GC(老年代),Full GC(整个堆)。",
+    "syntax": "-Xms512m -Xmx1024m (堆初始/最大)",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "GC日志",
+        "description": "查看GC情况",
+        "code": "// JVM参数\njava -Xms256m -Xmx512m -XX:+PrintGCDetails MyApp\n// System.gc()仅建议GC,不保证执行",
+        "codeHtml": "java -Xms256m -Xmx512m -XX:+PrintGCDetails MyApp"
+      }
+    ],
+    "tags": [
+      "JVM",
+      "GC",
+      "必考"
+    ],
+    "usageFrequency": 90,
+    "relatedQuestionIds": [
+      "java_016",
+      "java_017"
+    ]
+  },
+  {
+    "knowledgeId": "java_know_007",
+    "categoryId": "java",
+    "categoryName": "Java开发",
+    "title": "异常处理 try-catch-finally",
+    "group": "基础语法",
+    "definition": "checked异常(必须处理,如IOException)。unchecked/RuntimeException(NPE/ArrayIndexOutOfBounds等)。finally必执行(除System.exit)。try-with-resources自动关闭资源。",
+    "syntax": "try { ... } catch (Exception e) { ... } finally { ... }",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "try-with-resources",
+        "description": "自动关闭文件流",
+        "code": "try (FileInputStream fis = new FileInputStream(\"a.txt\")) {\n    int data = fis.read();\n} catch (IOException e) {\n    e.printStackTrace();\n}",
+        "codeHtml": "<span style=\"color:#C586C0\">try</span> (<span style=\"color:#4EC9B0\">FileInputStream</span> fis = <span style=\"color:#C586C0\">new</span> <span style=\"color:#4EC9B0\">FileInputStream</span>(...)) {<br>    ...<br>} <span style=\"color:#C586C0\">catch</span> (<span style=\"color:#4EC9B0\">IOException</span> e) { ... }"
+      }
+    ],
+    "tags": [
+      "异常",
+      "try-catch",
+      "必考"
+    ],
+    "usageFrequency": 92,
+    "relatedQuestionIds": [
+      "java_018",
+      "java_019"
+    ]
+  },
+  {
+    "knowledgeId": "java_know_008",
+    "categoryId": "java",
+    "categoryName": "Java开发",
+    "title": "Spring IoC/DI 与 AOP",
+    "group": "框架",
+    "definition": "IoC控制反转:容器管理对象创建和依赖。DI依赖注入:@Autowired自动装配。AOP面向切面:@Aspect定义切面,@Before/@After/@Around增强。@Transactional声明式事务。",
+    "syntax": "@Autowired\nprivate UserService userService;",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "Spring Boot 入门",
+        "description": "REST接口示例",
+        "code": "@RestController\npublic class HelloController {\n    @Autowired\n    private UserService userService;\n\n    @GetMapping(\"/hello\")\n    public String hello() { return \"Hello Spring!\"; }\n}",
+        "codeHtml": "<span style=\"color:#569CD6\">@RestController</span><br><span style=\"color:#C586C0\">public class</span> <span style=\"color:#4EC9B0\">HelloController</span> {<br>    <span style=\"color:#569CD6\">@GetMapping</span>(<span style=\"color:#CE9178\">\"/hello\"</span>)<br>    <span style=\"color:#C586C0\">public</span> <span style=\"color:#4EC9B0\">String</span> hello() { ... }<br>}"
+      }
+    ],
+    "tags": [
+      "Spring",
+      "IoC",
+      "AOP",
+      "必考"
+    ],
+    "usageFrequency": 95,
+    "relatedQuestionIds": [
+      "java_020",
+      "java_021",
+      "java_022"
+    ]
+  }
+]

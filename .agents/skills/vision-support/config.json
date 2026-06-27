@@ -1,0 +1,52 @@
+{
+  "defaultPrompt": "Please describe this image in detail. If it shows a UI/web page, describe the layout, elements, colors, and any visible issues, errors, or misalignments. If it shows code output or terminal, describe the content and any error messages.",
+  "models": [
+    {
+      "name": "通义千问 (Qwen VL) / qwen-vl-plus",
+      "provider": "openai",
+      "providerId": "dashscope",
+      "model": "qwen-vl-plus",
+      "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "apiKeyEnv": "",
+      "apiKey": "sk-8cd567ddf356419ea315e1b553ca1a7f",
+      "timeout": 30000
+    },
+    {
+      "name": "GPT-4o Vision",
+      "provider": "openai",
+      "model": "gpt-4o",
+      "baseUrl": "https://api.openai.com/v1",
+      "apiKeyEnv": "OPENAI_API_KEY",
+      "apiKey": "",
+      "timeout": 30000
+    },
+    {
+      "name": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-2.0-flash",
+      "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
+      "apiKeyEnv": "GEMINI_API_KEY",
+      "apiKey": "",
+      "timeout": 30000
+    },
+    {
+      "name": "Qwen-VL-Max",
+      "provider": "openai",
+      "model": "qwen-vl-max",
+      "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "apiKeyEnv": "DASHSCOPE_API_KEY",
+      "apiKey": "",
+      "timeout": 30000
+    },
+    {
+      "name": "GLM-4V-Plus",
+      "provider": "openai",
+      "model": "glm-4v-plus",
+      "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
+      "apiKeyEnv": "GLM_API_KEY",
+      "apiKey": "",
+      "timeout": 30000
+    }
+  ],
+  "proxy": { "urls": [], "enabled": false }
+}

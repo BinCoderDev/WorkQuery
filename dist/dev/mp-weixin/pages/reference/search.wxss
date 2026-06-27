@@ -1,0 +1,58 @@
+/* uni-app 全局 SCSS 变量 */
+.container.data-v-3c139173 {
+  padding: 24rpx;
+}
+.search-bar.data-v-3c139173 {
+  display: flex;
+  align-items: center;
+  background: var(--bg-card);
+  border-radius: 40rpx;
+  padding: 8rpx 24rpx;
+  box-shadow: var(--shadow-sm);
+}
+.s-icon.data-v-3c139173 {
+  font-size: 32rpx;
+  margin-right: 12rpx;
+}
+.s-input.data-v-3c139173 {
+  flex: 1;
+  height: 72rpx;
+  font-size: 28rpx;
+}
+.s-clear.data-v-3c139173 {
+  font-size: 28rpx;
+  color: var(--text-hint);
+  padding: 8rpx;
+}
+.status.data-v-3c139173 {
+  text-align: center;
+  padding: 80rpx 0;
+  color: var(--text-hint);
+  font-size: 28rpx;
+}
+.result-item.data-v-3c139173 {
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid var(--border-color);
+}
+.r-type.data-v-3c139173 {
+  display: inline-block;
+  font-size: 20rpx;
+  padding: 4rpx 12rpx;
+  border-radius: 8rpx;
+  margin-right: 12rpx;
+  background: #e8f0fe;
+  color: var(--color-primary);
+}
+.r-title.data-v-3c139173 {
+  font-size: 28rpx;
+  color: var(--text-primary);
+}
+.r-preview.data-v-3c139173 {
+  display: block;
+  font-size: 24rpx;
+  color: var(--text-hint);
+  margin-top: 6rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

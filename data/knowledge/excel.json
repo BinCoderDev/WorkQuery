@@ -1,0 +1,205 @@
+{
+  "categoryId": "excel",
+  "categoryName": "Excel函数",
+  "knowledgeItems": [
+    {
+      "knowledgeId": "excel_know_001",
+      "title": "VLOOKUP 函数",
+      "group": "查找与引用",
+      "definition": "VLOOKUP（Vertical Lookup）是 Excel 中最常用的查找函数，用于在表格的首列中垂直查找指定值，并返回该行中指定列的值。",
+      "syntax": "VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])",
+      "parameters": [
+        {"name": "lookup_value", "type": "any", "desc": "要查找的值，可以是数值、文本或单元格引用"},
+        {"name": "table_array", "type": "range", "desc": "包含查找数据的表格区域，查找值必须在第一列"},
+        {"name": "col_index_num", "type": "number", "desc": "返回值所在的列序号（从 table_array 首列开始计数，首列为1）"},
+        {"name": "range_lookup", "type": "boolean", "desc": "可选。FALSE=精确匹配，TRUE=近似匹配。推荐使用FALSE"}
+      ],
+      "examples": [
+        {
+          "title": "根据员工ID查找姓名",
+          "description": "在A2:B10区域中，根据E2单元格的员工ID查找对应姓名（姓名在第2列）",
+          "code": "=VLOOKUP(E2, A2:B10, 2, FALSE)",
+          "codeHtml": "<span style=\"color:#569CD6\">=VLOOKUP</span>(E2, A2:B10, 2, FALSE)"
+        },
+        {
+          "title": "根据成绩查找等级",
+          "description": "在评分表中查找成绩对应的等级（使用近似匹配）",
+          "code": "=VLOOKUP(B2, $E$1:$F$5, 2, TRUE)",
+          "codeHtml": "<span style=\"color:#569CD6\">=VLOOKUP</span>(B2, $E$1:$F$5, 2, TRUE)"
+        }
+      ],
+      "tags": ["查找", "函数", "常用", "数据匹配"],
+      "relatedQuestionIds": ["excel_001", "excel_002", "excel_019"],
+      "usageFrequency": 98
+    },
+    {
+      "knowledgeId": "excel_know_002",
+      "title": "SUMIF / SUMIFS 函数",
+      "group": "数学与统计",
+      "definition": "SUMIF 根据单一条件对区域中的数值求和。SUMIFS 支持多个条件同时筛选求和，功能更强大。",
+      "syntax": "SUMIF(range, criteria, [sum_range])\nSUMIFS(sum_range, criteria_range1, criteria1, [criteria_range2, criteria2], ...)",
+      "parameters": [
+        {"name": "range", "type": "range", "desc": "要判断条件的单元格区域"},
+        {"name": "criteria", "type": "string", "desc": "条件表达式，如 \">100\"、\"苹果\"、\"<>0\""},
+        {"name": "sum_range", "type": "range", "desc": "实际求和的区域。省略则对 range 本身求和"}
+      ],
+      "examples": [
+        {
+          "title": "单条件求和",
+          "description": "统计销售额大于1000的总和",
+          "code": "=SUMIF(B2:B20, \">1000\")",
+          "codeHtml": "<span style=\"color:#569CD6\">=SUMIF</span>(B2:B20, \"&gt;1000\")"
+        },
+        {
+          "title": "多条件求和",
+          "description": "统计北京地区销售额大于1000的总和",
+          "code": "=SUMIFS(C2:C20, A2:A20, \"北京\", C2:C20, \">1000\")",
+          "codeHtml": "<span style=\"color:#569CD6\">=SUMIFS</span>(C2:C20, A2:A20, \"北京\", C2:C20, \"&gt;1000\")"
+        }
+      ],
+      "tags": ["求和", "条件", "函数", "常用"],
+      "relatedQuestionIds": ["excel_003", "excel_011"],
+      "usageFrequency": 92
+    },
+    {
+      "knowledgeId": "excel_know_003",
+      "title": "IF 函数",
+      "group": "逻辑",
+      "definition": "IF 函数根据条件判断返回不同的值，是 Excel 中最基础的条件判断函数。可以嵌套多层 IF 实现多条件判断。",
+      "syntax": "IF(logical_test, value_if_true, value_if_false)",
+      "parameters": [
+        {"name": "logical_test", "type": "boolean", "desc": "判断条件，如 A1>60"},
+        {"name": "value_if_true", "type": "any", "desc": "条件为真时返回的值"},
+        {"name": "value_if_false", "type": "any", "desc": "条件为假时返回的值"}
+      ],
+      "examples": [
+        {
+          "title": "成绩及格判断",
+          "description": "成绩大于等于60显示「及格」，否则显示「不及格」",
+          "code": "=IF(B2>=60, \"及格\", \"不及格\")",
+          "codeHtml": "<span style=\"color:#569CD6\">=IF</span>(B2&gt;=60, \"及格\", \"不及格\")"
+        },
+        {
+          "title": "嵌套IF多等级判断",
+          "description": "根据分数返回优/良/中/差四个等级",
+          "code": "=IF(B2>=90, \"优\", IF(B2>=75, \"良\", IF(B2>=60, \"中\", \"差\")))",
+          "codeHtml": "<span style=\"color:#569CD6\">=IF</span>(B2&gt;=90, \"优\", <span style=\"color:#569CD6\">IF</span>(B2&gt;=75, \"良\", <span style=\"color:#569CD6\">IF</span>(B2&gt;=60, \"中\", \"差\")))"
+        }
+      ],
+      "tags": ["逻辑", "条件", "函数", "常用"],
+      "relatedQuestionIds": ["excel_004", "excel_010"],
+      "usageFrequency": 95
+    },
+    {
+      "knowledgeId": "excel_know_004",
+      "title": "COUNT / COUNTA / COUNTIF 函数",
+      "group": "数学与统计",
+      "definition": "计数函数族用于统计单元格数量。COUNT统计数字个数，COUNTA统计非空个数，COUNTIF按条件计数。",
+      "syntax": "COUNT(value1, [value2], ...)\nCOUNTA(value1, [value2], ...)\nCOUNTIF(range, criteria)",
+      "parameters": [
+        {"name": "range", "type": "range", "desc": "要统计的单元格区域"},
+        {"name": "criteria", "type": "string", "desc": "计数条件，如 \">=60\"、\"是\""}
+      ],
+      "examples": [
+        {
+          "title": "统计及格人数",
+          "description": "统计B2到B50中成绩≥60的人数",
+          "code": "=COUNTIF(B2:B50, \">=60\")",
+          "codeHtml": "<span style=\"color:#569CD6\">=COUNTIF</span>(B2:B50, \"&gt;=60\")"
+        }
+      ],
+      "tags": ["计数", "统计", "函数", "常用"],
+      "relatedQuestionIds": ["excel_005", "excel_007"],
+      "usageFrequency": 85
+    },
+    {
+      "knowledgeId": "excel_know_005",
+      "title": "文本处理函数",
+      "group": "文本",
+      "definition": "Excel 提供丰富的文本处理函数，包括字符串截取（LEFT/RIGHT/MID）、合并（CONCATENATE/&）、清理（TRIM/CLEAN）、长度计算（LEN）等。",
+      "syntax": "LEFT(text, num_chars)\nRIGHT(text, num_chars)\nMID(text, start_num, num_chars)\nCONCATENATE(text1, text2, ...)\nTRIM(text)\nLEN(text)",
+      "parameters": [
+        {"name": "text", "type": "string", "desc": "要处理的文本或单元格引用"},
+        {"name": "num_chars", "type": "number", "desc": "要截取的字符数量"},
+        {"name": "start_num", "type": "number", "desc": "开始截取的位置（从1开始）"}
+      ],
+      "examples": [
+        {
+          "title": "提取前5个字符",
+          "description": "从A1单元格文本中提取前5个字符",
+          "code": "=LEFT(A1, 5)",
+          "codeHtml": "<span style=\"color:#569CD6\">=LEFT</span>(A1, 5)"
+        },
+        {
+          "title": "合并姓名",
+          "description": "将姓和名用空格合并",
+          "code": "=A1 & \" \" & B1",
+          "codeHtml": "=A1 &amp; \" \" &amp; B1"
+        }
+      ],
+      "tags": ["文本", "字符串", "函数"],
+      "relatedQuestionIds": ["excel_008", "excel_013", "excel_015", "excel_022", "excel_024"],
+      "usageFrequency": 88
+    },
+    {
+      "knowledgeId": "excel_know_006",
+      "title": "单元格引用：相对/绝对/混合",
+      "group": "基础概念",
+      "definition": "Excel 单元格引用有三种类型。相对引用（A1）随公式复制而改变；绝对引用（$A$1）固定不变；混合引用（$A1 或 A$1）只固定行或列。按F4键可在四种引用间快速切换。",
+      "syntax": "A1（相对引用）\n$A$1（绝对引用）\n$A1（列绝对，行相对）\nA$1（列相对，行绝对）",
+      "parameters": [],
+      "examples": [
+        {
+          "title": "混合引用示例",
+          "description": "B$1表示行号固定为第1行，但列可以随公式拖动变化",
+          "code": "=B$1 * $A2",
+          "codeHtml": "=<span style=\"color:#569CD6\">B$1</span> * <span style=\"color:#569CD6\">$A2</span>"
+        }
+      ],
+      "tags": ["引用", "基础", "概念"],
+      "relatedQuestionIds": ["excel_006", "excel_016", "excel_029"],
+      "usageFrequency": 90
+    },
+    {
+      "knowledgeId": "excel_know_007",
+      "title": "数据透视表",
+      "group": "数据分析",
+      "definition": "数据透视表是 Excel 最强大的数据分析工具，无需公式即可快速对大量数据进行分类汇总、交叉分析、排序和筛选。通过拖拽字段到行/列/值/筛选区域完成多维分析。",
+      "syntax": "操作路径：插入 → 数据透视表",
+      "parameters": [],
+      "examples": [
+        {
+          "title": "按部门汇总销售额",
+          "description": "创建数据透视表，将\"部门\"拖到行区域，\"销售额\"拖到值区域",
+          "code": "无需公式，通过拖拽完成",
+          "codeHtml": "无需公式，通过拖拽完成"
+        }
+      ],
+      "tags": ["数据分析", "汇总", "高级"],
+      "relatedQuestionIds": ["excel_014"],
+      "usageFrequency": 75
+    },
+    {
+      "knowledgeId": "excel_know_008",
+      "title": "ROUND / ROUNDUP / ROUNDDOWN 函数",
+      "group": "数学与统计",
+      "definition": "ROUND 按指定小数位四舍五入。ROUNDUP 始终向上舍入（远离零），ROUNDDOWN 始终向下舍入（靠近零）。INT 直接截断小数部分。",
+      "syntax": "ROUND(number, num_digits)\nROUNDUP(number, num_digits)\nROUNDDOWN(number, num_digits)",
+      "parameters": [
+        {"name": "number", "type": "number", "desc": "要舍入的数值"},
+        {"name": "num_digits", "type": "number", "desc": "保留的小数位数。正数=小数位，0=整数，负数=十位百位"}
+      ],
+      "examples": [
+        {
+          "title": "保留两位小数",
+          "description": "将3.14159四舍五入到两位小数",
+          "code": "=ROUND(3.14159, 2)",
+          "codeHtml": "<span style=\"color:#569CD6\">=ROUND</span>(3.14159, 2)<br>结果: 3.14"
+        }
+      ],
+      "tags": ["数学", "舍入", "函数"],
+      "relatedQuestionIds": ["excel_017"],
+      "usageFrequency": 72
+    }
+  ]
+}

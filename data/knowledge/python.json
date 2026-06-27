@@ -1,0 +1,101 @@
+{
+  "categoryId": "python",
+  "categoryName": "Python基础",
+  "knowledgeItems": [
+    {
+      "knowledgeId": "python_know_001",
+      "title": "列表（list）",
+      "group": "数据类型",
+      "definition": "列表是 Python 中最常用的可变序列类型，用方括号 [] 定义，可以存放任意类型的元素。支持索引、切片、追加、删除等操作。",
+      "syntax": "my_list = [1, 2, 3]\nmy_list.append(4)\nmy_list[0]  # 访问第一个元素\nmy_list[1:3]  # 切片",
+      "parameters": [],
+      "examples": [
+        {
+          "title": "列表基本操作",
+          "description": "创建列表、添加元素、访问元素、切片操作",
+          "code": "nums = [1, 2, 3, 4, 5]\nnums.append(6)      # [1,2,3,4,5,6]\nnums.pop()          # 删除并返回6\nlen(nums)           # 5\nnums[1:4]           # [2, 3, 4]",
+          "codeHtml": "nums = [1, 2, 3, 4, 5]<br>nums<span style=\"color:#569CD6\">.append</span>(6)<br>nums<span style=\"color:#569CD6\">.pop</span>()<br><span style=\"color:#569CD6\">len</span>(nums)  <span style=\"color:#6A9955\"># 5</span><br>nums[1:4]  <span style=\"color:#6A9955\"># [2, 3, 4]</span>"
+        }
+      ],
+      "tags": ["列表", "数据类型", "可变"],
+      "relatedQuestionIds": ["python_002", "python_005", "python_006", "python_017", "python_021", "python_025"],
+      "usageFrequency": 98
+    },
+    {
+      "knowledgeId": "python_know_002",
+      "title": "基本数据类型",
+      "group": "数据类型",
+      "definition": "Python 有6种基本数据类型：int（整数）、float（浮点数）、str（字符串）、bool（布尔值 True/False）、NoneType（空值 None）。用 type() 函数可以查看任何变量的类型。",
+      "syntax": "type(42)       # <class 'int'>\ntype(3.14)     # <class 'float'>\ntype(\"hello\")  # <class 'str'>\ntype(True)     # <class 'bool'>",
+      "parameters": [],
+      "examples": [
+        {
+          "title": "类型判断",
+          "description": "使用type()和isinstance()判断类型",
+          "code": "x = 42\nprint(type(x))       # <class 'int'>\nprint(isinstance(x, int))  # True",
+          "codeHtml": "x = 42<br><span style=\"color:#569CD6\">print</span>(<span style=\"color:#569CD6\">type</span>(x))<br><span style=\"color:#569CD6\">print</span>(<span style=\"color:#569CD6\">isinstance</span>(x, int))  <span style=\"color:#6A9955\"># True</span>"
+        }
+      ],
+      "tags": ["数据类型", "基础"],
+      "relatedQuestionIds": ["python_003"],
+      "usageFrequency": 95
+    },
+    {
+      "knowledgeId": "python_know_003",
+      "title": "字典（dict）",
+      "group": "数据类型",
+      "definition": "字典是键值对（key-value）映射结构，用花括号 {} 定义。通过键（key）快速访问对应的值（value）。键必须是不可变类型（字符串、数字、元组）。",
+      "syntax": "person = {\"name\": \"张三\", \"age\": 25}\nperson[\"name\"]       # \"张三\"\nperson.get(\"phone\")  # None（键不存在不报错）",
+      "parameters": [],
+      "examples": [
+        {
+          "title": "字典基本操作",
+          "description": "创建、访问、添加、删除字典元素",
+          "code": "d = {\"a\": 1, \"b\": 2}\nd[\"c\"] = 3          # 添加 {'a':1,'b':2,'c':3}\nd.get(\"x\", 0)       # 0（键不存在返回默认值）\nd.keys()             # dict_keys(['a', 'b', 'c'])",
+          "codeHtml": "d = {<span style=\"color:#CE9178\">\"a\"</span>: 1, <span style=\"color:#CE9178\">\"b\"</span>: 2}<br>d[<span style=\"color:#CE9178\">\"c\"</span>] = 3<br>d<span style=\"color:#569CD6\">.get</span>(<span style=\"color:#CE9178\">\"x\"</span>, 0)  <span style=\"color:#6A9955\"># 0</span>"
+        }
+      ],
+      "tags": ["字典", "键值对", "数据类型"],
+      "relatedQuestionIds": ["python_008", "python_028"],
+      "usageFrequency": 92
+    },
+    {
+      "knowledgeId": "python_know_004",
+      "title": "for 循环",
+      "group": "流程控制",
+      "definition": "for 循环用于遍历可迭代对象（列表、字符串、range等），是 Python 最常用的循环结构。搭配 range() 可以执行固定次数的循环。",
+      "syntax": "for 变量 in 可迭代对象:\n    循环体（缩进4个空格）\n\n# 带 else 的循环\nfor i in range(5):\n    print(i)\nelse:\n    print(\"循环正常结束\")",
+      "parameters": [],
+      "examples": [
+        {
+          "title": "遍历列表",
+          "description": "打印列表中的每个元素",
+          "code": "fruits = [\"苹果\", \"香蕉\", \"橘子\"]\nfor fruit in fruits:\n    print(fruit)",
+          "codeHtml": "fruits = [<span style=\"color:#CE9178\">\"苹果\"</span>, <span style=\"color:#CE9178\">\"香蕉\"</span>, <span style=\"color:#CE9178\">\"橘子\"</span>]<br><span style=\"color:#C586C0\">for</span> fruit <span style=\"color:#C586C0\">in</span> fruits:<br>    <span style=\"color:#569CD6\">print</span>(fruit)"
+        }
+      ],
+      "tags": ["循环", "for", "遍历"],
+      "relatedQuestionIds": ["python_007"],
+      "usageFrequency": 96
+    },
+    {
+      "knowledgeId": "python_know_005",
+      "title": "def 函数定义",
+      "group": "函数",
+      "definition": "用 def 关键字定义函数。Python 函数支持默认参数、关键字参数、可变参数（*args, **kwargs）和返回值。函数是第一等公民，可以赋值给变量、作为参数传递。",
+      "syntax": "def 函数名(参数1, 参数2=默认值):\n    \"\"\"文档字符串\"\"\"\n    # 函数体\n    return 返回值",
+      "parameters": [],
+      "examples": [
+        {
+          "title": "带默认参数的函数",
+          "description": "定义问候函数，支持可选的称呼参数",
+          "code": "def greet(name, title=\"同学\"):\n    return f\"你好，{name}{title}！\"\n\nprint(greet(\"小明\"))           # 你好，小明同学！\nprint(greet(\"李老师\", \"老师\")) # 你好，李老师老师！",
+          "codeHtml": "<span style=\"color:#C586C0\">def</span> <span style=\"color:#DCDCAA\">greet</span>(name, title=<span style=\"color:#CE9178\">\"同学\"</span>):<br>    <span style=\"color:#C586C0\">return</span> <span style=\"color:#CE9178\">f\"你好，{name}{title}！\"</span><br><br><span style=\"color:#569CD6\">print</span>(greet(<span style=\"color:#CE9178\">\"小明\"</span>))<br><span style=\"color:#569CD6\">print</span>(greet(<span style=\"color:#CE9178\">\"李老师\"</span>, <span style=\"color:#CE9178\">\"老师\"</span>))"
+        }
+      ],
+      "tags": ["函数", "def", "参数"],
+      "relatedQuestionIds": ["python_011"],
+      "usageFrequency": 94
+    }
+  ]
+}

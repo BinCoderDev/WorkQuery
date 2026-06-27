@@ -1,0 +1,418 @@
+{
+  "bankId": "python",
+  "bankName": "Python基础题库",
+  "bankIcon": "🐍",
+  "bankDescription": "覆盖基础语法、数据类型、常用方法等入门知识点",
+  "totalQuestions": 30,
+  "order": 2,
+  "isActive": true,
+  "questions": [
+    {
+      "questionId": "python_001",
+      "question": "Python中如何输出\"Hello World\"？",
+      "options": ["A. console.log(\"Hello World\")", "B. print(\"Hello World\")", "C. echo \"Hello World\"", "D. System.out.println(\"Hello World\")"],
+      "correctIndex": 1,
+      "explanation": "Python使用print()函数输出内容。console.log是JavaScript，echo是Shell，System.out.println是Java。",
+      "codeBlocks": [],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 1
+    },
+    {
+      "questionId": "python_002",
+      "question": "以下哪个是Python中的列表（list）？",
+      "options": ["A. (1, 2, 3)", "B. {1, 2, 3}", "C. [1, 2, 3]", "D. <1, 2, 3>"],
+      "correctIndex": 2,
+      "explanation": "[1,2,3]是列表（list），用方括号定义。 (1,2,3)是元组（tuple），{1,2,3}是集合（set），<>不是Python数据类型。",
+      "codeBlocks": [],
+      "knowledgeIds": ["python_know_001"],
+      "difficulty": 1,
+      "orderIndex": 2
+    },
+    {
+      "questionId": "python_003",
+      "question": "以下代码的输出是什么？\nprint(type(3.14))",
+      "options": ["A. <class 'int'>", "B. <class 'float'>", "C. <class 'str'>", "D. <class 'bool'>"],
+      "correctIndex": 1,
+      "explanation": "3.14是浮点数（float），type()返回其类型。int是整数，str是字符串，bool是布尔值。",
+      "codeBlocks": [],
+      "knowledgeIds": ["python_know_002"],
+      "difficulty": 1,
+      "orderIndex": 3
+    },
+    {
+      "questionId": "python_004",
+      "question": "以下哪个变量命名是合法的？",
+      "options": ["A. 2name", "B. my-name", "C. _count", "D. class"],
+      "correctIndex": 2,
+      "explanation": "_count是合法变量名（下划线开头允许）。2name不能数字开头，my-name含非法字符-，class是Python关键字不能作为变量名。",
+      "codeBlocks": [],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 4
+    },
+    {
+      "questionId": "python_005",
+      "question": "len([1, 2, 3, 4, 5]) 的返回值是？",
+      "options": ["A. 4", "B. 5", "C. 15", "D. [1,2,3,4,5]"],
+      "correctIndex": 1,
+      "explanation": "len()返回列表的元素个数，这里有5个元素所以返回5。sum()才是求和返回15。",
+      "codeBlocks": [],
+      "knowledgeIds": ["python_know_001"],
+      "difficulty": 1,
+      "orderIndex": 5
+    },
+    {
+      "questionId": "python_006",
+      "question": "以下哪个方法可以向列表末尾添加元素？",
+      "options": ["A. list.add()", "B. list.append()", "C. list.insert()", "D. list.push()"],
+      "correctIndex": 1,
+      "explanation": "append()在列表末尾添加元素。insert()在指定位置插入，add()是集合的方法，push()不是Python方法。",
+      "codeBlocks": [
+        {
+          "language": "python",
+          "caption": "append 示例",
+          "code": "nums = [1, 2, 3]\nnums.append(4)\nprint(nums)  # [1, 2, 3, 4]",
+          "codeHtml": "nums = [1, 2, 3]<br>nums<span style=\"color:#569CD6\">.append</span>(4)<br><span style=\"color:#569CD6\">print</span>(nums)  <span style=\"color:#6A9955\"># [1, 2, 3, 4]</span>"
+        }
+      ],
+      "knowledgeIds": ["python_know_001"],
+      "difficulty": 1,
+      "orderIndex": 6
+    },
+    {
+      "questionId": "python_007",
+      "question": "Python中用于循环的关键词是？",
+      "options": ["A. loop", "B. foreach", "C. for", "D. repeat"],
+      "correctIndex": 2,
+      "explanation": "Python使用for...in...进行循环遍历。while也可用于循环。loop、foreach、repeat不是Python关键词。",
+      "codeBlocks": [
+        {
+          "language": "python",
+          "caption": "for 循环示例",
+          "code": "for i in range(5):\n    print(i)",
+          "codeHtml": "<span style=\"color:#C586C0\">for</span> i <span style=\"color:#C586C0\">in</span> <span style=\"color:#569CD6\">range</span>(5):<br>    <span style=\"color:#569CD6\">print</span>(i)"
+        }
+      ],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 7
+    },
+    {
+      "questionId": "python_008",
+      "question": "以下哪个是Python字典（dict）？",
+      "options": ["A. [\"a\", \"b\"]", "B. (\"a\", \"b\")", "C. {\"a\", \"b\"}", "D. {\"name\": \"张三\", \"age\": 25}"],
+      "correctIndex": 3,
+      "explanation": "{\"name\":\"张三\"}是字典，用花括号+键值对定义。[\"a\",\"b\"]是列表，(\"a\",\"b\")是元组，{\"a\",\"b\"}是集合。",
+      "codeBlocks": [],
+      "knowledgeIds": ["python_know_003"],
+      "difficulty": 1,
+      "orderIndex": 8
+    },
+    {
+      "questionId": "python_009",
+      "question": "以下代码输出什么？\nprint(10 // 3)",
+      "options": ["A. 3.333...", "B. 3", "C. 1", "D. 3.0"],
+      "correctIndex": 1,
+      "explanation": "// 是整除（地板除）运算符，返回商的整数部分。10//3=3。10/3返回3.333...，10%3返回余数1。",
+      "codeBlocks": [],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 9
+    },
+    {
+      "questionId": "python_010",
+      "question": "字符串方法 .strip() 的作用是什么？",
+      "options": [
+        "A. 删除字符串中间的空格",
+        "B. 删除字符串两端的空白字符",
+        "C. 将字符串分割为列表",
+        "D. 将字符串转为大写"
+      ],
+      "correctIndex": 1,
+      "explanation": "strip()删除字符串两端的空白字符（空格、换行、制表符等）。split()将字符串分割为列表，upper()转大写。",
+      "codeBlocks": [
+        {
+          "language": "python",
+          "caption": "strip 示例",
+          "code": "text = \"  hello  \"\nprint(text.strip())  # \"hello\"",
+          "codeHtml": "text = <span style=\"color:#CE9178\">\"  hello  \"</span><br><span style=\"color:#569CD6\">print</span>(text<span style=\"color:#569CD6\">.strip</span>())  <span style=\"color:#6A9955\"># \"hello\"</span>"
+        }
+      ],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 10
+    },
+    {
+      "questionId": "python_011",
+      "question": "以下哪个是正确的函数定义？",
+      "options": [
+        "A. function myFunc():",
+        "B. def myFunc():",
+        "C. func myFunc():",
+        "D. define myFunc():"
+      ],
+      "correctIndex": 1,
+      "explanation": "Python用def关键字定义函数，后面跟函数名和括号。function是JavaScript，其他不是任何语言的关键字。",
+      "codeBlocks": [
+        {
+          "language": "python",
+          "caption": "函数定义",
+          "code": "def greet(name):\n    return f\"Hello, {name}\"",
+          "codeHtml": "<span style=\"color:#C586C0\">def</span> <span style=\"color:#DCDCAA\">greet</span>(name):<br>    <span style=\"color:#C586C0\">return</span> <span style=\"color:#CE9178\">f\"Hello, {name}\"</span>"
+        }
+      ],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 11
+    },
+    {
+      "questionId": "python_012",
+      "question": "以下代码中的f-string（f\"...\"）的作用是什么？\nname = \"小明\"\nprint(f\"你好，{name}\")",
+      "options": ["A. 格式化字符串，将变量值嵌入字符串", "B. 表示这是一个函数", "C. 表示这是一个文件路径", "D. 表示浮点数"],
+      "correctIndex": 0,
+      "explanation": "f-string（格式化字符串字面量）在Python3.6+引入，用f前缀+花括号{}嵌入变量，比format()和%格式化更简洁直观。",
+      "codeBlocks": [],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 12
+    },
+    {
+      "questionId": "python_013",
+      "question": "如果要判断一个值是否在列表中，应该使用哪个关键词？",
+      "options": ["A. has", "B. in", "C. contains", "D. exists"],
+      "correctIndex": 1,
+      "explanation": "Python使用in关键词检查成员关系：if x in my_list:。not in表示不在其中。",
+      "codeBlocks": [
+        {
+          "language": "python",
+          "caption": "in 运算符",
+          "code": "fruits = [\"苹果\", \"香蕉\"]\nif \"苹果\" in fruits:\n    print(\"找到了\")",
+          "codeHtml": "fruits = [<span style=\"color:#CE9178\">\"苹果\"</span>, <span style=\"color:#CE9178\">\"香蕉\"</span>]<br><span style=\"color:#C586C0\">if</span> <span style=\"color:#CE9178\">\"苹果\"</span> <span style=\"color:#C586C0\">in</span> fruits:<br>    <span style=\"color:#569CD6\">print</span>(<span style=\"color:#CE9178\">\"找到了\"</span>)"
+        }
+      ],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 13
+    },
+    {
+      "questionId": "python_014",
+      "question": "以下代码的输出是？\nprint(3 == 3.0)",
+      "options": ["A. True", "B. False", "C. 报错", "D. None"],
+      "correctIndex": 0,
+      "explanation": "Python中==比较值是否相等，整数3和浮点数3.0的值相等，所以返回True。如果要比较类型也相同，用is或type()。",
+      "codeBlocks": [],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 14
+    },
+    {
+      "questionId": "python_015",
+      "question": "range(5) 生成什么？",
+      "options": ["A. [1,2,3,4,5]", "B. (0,1,2,3,4,5)", "C. 0到4的数字序列", "D. 5个随机数"],
+      "correctIndex": 2,
+      "explanation": "range(5)生成0,1,2,3,4（从0开始，到5之前结束，不包括5）。range(1,6)才生成1到5。range()返回的是一个range对象，需要list()转换才能看到列表。",
+      "codeBlocks": [],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 15
+    },
+    {
+      "questionId": "python_016",
+      "question": "以下哪个方法可以将字符串全部转为小写？",
+      "options": ["A. .lowercase()", "B. .toLower()", "C. .lower()", "D. .small()"],
+      "correctIndex": 2,
+      "explanation": "lower()将字符串转为全小写。upper()转全大写，title()转首字母大写。",
+      "codeBlocks": [],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 16
+    },
+    {
+      "questionId": "python_017",
+      "question": "列表切片 [1,2,3,4,5][1:4] 返回什么？",
+      "options": ["A. [1,2,3,4]", "B. [2,3,4]", "C. [2,3,4,5]", "D. [1,2,3]"],
+      "correctIndex": 1,
+      "explanation": "切片[start:end]包含start索引（从0开始），不包含end索引。索引1是第二个元素2，索引4是第五个元素5（不包含），所以返回[2,3,4]。",
+      "codeBlocks": [],
+      "knowledgeIds": ["python_know_001"],
+      "difficulty": 2,
+      "orderIndex": 17
+    },
+    {
+      "questionId": "python_018",
+      "question": "以下关于元组（tuple）的说法哪个正确？",
+      "options": [
+        "A. 元组元素可以修改",
+        "B. 元组是可变的",
+        "C. 元组是不可变的",
+        "D. 元组没有索引"
+      ],
+      "correctIndex": 2,
+      "explanation": "元组（tuple）是不可变数据类型，创建后不能修改、添加或删除元素。列表（list）是可变的。元组也有索引。",
+      "codeBlocks": [],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 18
+    },
+    {
+      "questionId": "python_019",
+      "question": "Python中如何导入math模块？",
+      "options": ["A. include math", "B. require math", "C. import math", "D. using math"],
+      "correctIndex": 2,
+      "explanation": "Python用import导入模块：import math。也可用from math import sqrt导入特定函数。include、require、using不是Python导入方式。",
+      "codeBlocks": [],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 19
+    },
+    {
+      "questionId": "python_020",
+      "question": "以下代码输出什么？\nprint(True and False)",
+      "options": ["A. True", "B. False", "C. 1", "D. 0"],
+      "correctIndex": 1,
+      "explanation": "and是逻辑与运算符，两边都为True才返回True。True and False返回False。True or False返回True。",
+      "codeBlocks": [],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 20
+    },
+    {
+      "questionId": "python_021",
+      "question": "列表推导式 [x*2 for x in range(3)] 的结果是？",
+      "options": ["A. [0,1,2]", "B. [2,4,6]", "C. [0,2,4]", "D. [1,2,3]"],
+      "correctIndex": 2,
+      "explanation": "range(3)生成0,1,2，每个元素乘以2得到0,2,4。列表推导式是Python特有的简洁语法，等价于for循环+append。",
+      "codeBlocks": [],
+      "knowledgeIds": ["python_know_001"],
+      "difficulty": 2,
+      "orderIndex": 21
+    },
+    {
+      "questionId": "python_022",
+      "question": "以下哪个可以正确读取文件内容？",
+      "options": [
+        "A. open(\"file.txt\", \"r\").read()",
+        "B. read(\"file.txt\")",
+        "C. file.read(\"file.txt\")",
+        "D. open.read(\"file.txt\")"
+      ],
+      "correctIndex": 0,
+      "explanation": "open()函数打开文件，第二个参数'r'表示只读模式，.read()读取全部内容。推荐用with语句：with open(\"file.txt\") as f: content = f.read()。",
+      "codeBlocks": [],
+      "knowledgeIds": [],
+      "difficulty": 2,
+      "orderIndex": 22
+    },
+    {
+      "questionId": "python_023",
+      "question": "以下代码输出什么？\nprint(\"Python\"[0])",
+      "options": ["A. P", "B. y", "C. Python", "D. 报错"],
+      "correctIndex": 0,
+      "explanation": "字符串可以用索引访问，索引从0开始。\"Python\"[0]取第一个字符P。\"Python\"[-1]取最后一个字符n。",
+      "codeBlocks": [],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 23
+    },
+    {
+      "questionId": "python_024",
+      "question": "异常处理 try-except 中，finally子句的作用是什么？",
+      "options": [
+        "A. 只在发生异常时执行",
+        "B. 只在没有异常时执行",
+        "C. 无论是否异常都会执行",
+        "D. 终止程序运行"
+      ],
+      "correctIndex": 2,
+      "explanation": "finally中的代码无论是否发生异常都会执行，通常用于释放资源（关闭文件、断开数据库连接等）。",
+      "codeBlocks": [],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 24
+    },
+    {
+      "questionId": "python_025",
+      "question": "列表方法 .pop() 的作用是？",
+      "options": [
+        "A. 在末尾添加元素",
+        "B. 删除并返回指定位置的元素",
+        "C. 排序列表",
+        "D. 复制列表"
+      ],
+      "correctIndex": 1,
+      "explanation": "pop([index])删除并返回指定位置的元素，默认删除最后一个。append()是添加，sort()是排序，copy()是复制。",
+      "codeBlocks": [],
+      "knowledgeIds": ["python_know_001"],
+      "difficulty": 1,
+      "orderIndex": 25
+    },
+    {
+      "questionId": "python_026",
+      "question": "以下哪个可以将字符串\"1,2,3\"按逗号分割成列表？",
+      "options": ["A. \"1,2,3\".cut(\",\")", "B. \"1,2,3\".split(\",\")", "C. \"1,2,3\".divide(\",\")", "D. \"1,2,3\".separate(\",\")"],
+      "correctIndex": 1,
+      "explanation": "split()按指定分隔符分割字符串，返回列表。join()是其逆操作，将列表元素用分隔符连接成字符串。",
+      "codeBlocks": [
+        {
+          "language": "python",
+          "caption": "split 示例",
+          "code": "\"1,2,3\".split(\",\")  # ['1', '2', '3']",
+          "codeHtml": "<span style=\"color:#CE9178\">\"1,2,3\"</span><span style=\"color:#569CD6\">.split</span>(<span style=\"color:#CE9178\">\",\"</span>)  <span style=\"color:#6A9955\"># ['1', '2', '3']</span>"
+        }
+      ],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 26
+    },
+    {
+      "questionId": "python_027",
+      "question": "Python中None表示什么？",
+      "options": ["A. 数字0", "B. 空字符串", "C. 空值/无值", "D. False"],
+      "correctIndex": 2,
+      "explanation": "None是Python的空值（类似其他语言的null/nil），表示没有值。它不等于0、空字符串\"\"或False。",
+      "codeBlocks": [],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 27
+    },
+    {
+      "questionId": "python_028",
+      "question": "以下代码中，哪个会导致报错？\nmy_dict = {\"a\": 1, \"b\": 2}\n# A: my_dict[\"a\"]\n# B: my_dict.get(\"c\")\n# C: my_dict[\"c\"]",
+      "options": ["A. A", "B. B", "C. C", "D. 都不会报错"],
+      "correctIndex": 2,
+      "explanation": "用[]访问不存在的键会报KeyError。用.get()方法访问不存在的键返回None（或指定的默认值），不会报错。",
+      "codeBlocks": [],
+      "knowledgeIds": ["python_know_003"],
+      "difficulty": 2,
+      "orderIndex": 28
+    },
+    {
+      "questionId": "python_029",
+      "question": "以下哪种写法可以正确创建包含0到9的列表？",
+      "options": [
+        "A. list(0, 9)",
+        "B. list(range(10))",
+        "C. range.toList(10)",
+        "D. [0..9]"
+      ],
+      "correctIndex": 1,
+      "explanation": "list(range(10))将range对象转为列表[0,1,...,9]。也可以直接用列表推导式：[i for i in range(10)]。",
+      "codeBlocks": [],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 29
+    },
+    {
+      "questionId": "python_030",
+      "question": "Python中注释的正确写法是？",
+      "options": ["A. // 这是注释", "B. <!-- 这是注释 -->", "C. # 这是注释", "D. /* 这是注释 */"],
+      "correctIndex": 2,
+      "explanation": "Python单行注释用#开头。多行注释用三个引号'''或\"\"\"包围。//是Java/JS注释，<!-- -->是HTML注释，/* */是C语言注释。",
+      "codeBlocks": [],
+      "knowledgeIds": [],
+      "difficulty": 1,
+      "orderIndex": 30
+    }
+  ]
+}

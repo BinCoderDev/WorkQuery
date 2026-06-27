@@ -1,0 +1,64 @@
+/* uni-app 全局 SCSS 变量 */
+.container.data-v-1c341d8b {
+  padding: 24rpx;
+}
+.search-bar.data-v-1c341d8b {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 24rpx;
+  background: var(--bg-card);
+  border-radius: 40rpx;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 32rpx;
+}
+.search-bar-hover.data-v-1c341d8b {
+  opacity: 0.7;
+}
+.search-icon.data-v-1c341d8b {
+  font-size: 32rpx;
+  margin-right: 16rpx;
+}
+.search-placeholder.data-v-1c341d8b {
+  font-size: 28rpx;
+  color: var(--text-hint);
+}
+.loading.data-v-1c341d8b, .error.data-v-1c341d8b {
+  text-align: center;
+  padding: 80rpx;
+  color: var(--text-hint);
+  font-size: 28rpx;
+}
+.cat-card.data-v-1c341d8b {
+  display: flex;
+  align-items: center;
+  padding: 28rpx;
+  margin-bottom: 20rpx;
+  background: var(--bg-card);
+  border-radius: 16rpx;
+  box-shadow: var(--shadow-sm);
+}
+.cat-card.data-v-1c341d8b:active {
+  transform: scale(0.98);
+}
+.cat-icon.data-v-1c341d8b {
+  font-size: 48rpx;
+  margin-right: 20rpx;
+}
+.cat-info.data-v-1c341d8b {
+  flex: 1;
+}
+.cat-name.data-v-1c341d8b {
+  display: block;
+  font-size: 30rpx;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.cat-count.data-v-1c341d8b {
+  font-size: 24rpx;
+  color: var(--text-hint);
+  margin-top: 4rpx;
+}
+.arrow.data-v-1c341d8b {
+  font-size: 36rpx;
+  color: var(--text-hint);
+}

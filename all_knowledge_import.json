@@ -1,0 +1,924 @@
+[
+  {
+    "knowledgeId": "excel_know_001",
+    "categoryId": "excel",
+    "categoryName": "Excel函数",
+    "title": "VLOOKUP 垂直查找",
+    "group": "查找与引用",
+    "definition": "最常用查找函数,在表格首列中垂直查找指定值,返回该行指定列的值。是面试必考。",
+    "syntax": "=VLOOKUP(查找值, 表格区域, 列序号, [匹配类型])",
+    "parameters": [
+      {
+        "name": "lookup_value",
+        "type": "any",
+        "desc": "要查找的值"
+      },
+      {
+        "name": "table_array",
+        "type": "range",
+        "desc": "查找区域,首列必须包含查找值"
+      },
+      {
+        "name": "col_index_num",
+        "type": "number",
+        "desc": "返回值所在列号(从1开始)"
+      },
+      {
+        "name": "range_lookup",
+        "type": "boolean",
+        "desc": "FALSE=精确匹配,TRUE=近似匹配"
+      }
+    ],
+    "examples": [
+      {
+        "title": "精确查找员工姓名",
+        "description": "根据E2的ID在A:B区域查找姓名",
+        "code": "=VLOOKUP(E2, A2:B10, 2, FALSE)",
+        "codeHtml": "<span style=\"color:#569CD6\">=VLOOKUP</span>(E2, A2:B10, 2, FALSE)"
+      }
+    ],
+    "tags": [
+      "查找",
+      "函数",
+      "必考"
+    ],
+    "usageFrequency": 98
+  },
+  {
+    "knowledgeId": "excel_know_002",
+    "categoryId": "excel",
+    "categoryName": "Excel函数",
+    "title": "SUMIF/SUMIFS 条件求和",
+    "group": "数学与统计",
+    "definition": "SUMIF单条件区域求和。SUMIFS支持多个条件同时筛选求和,参数顺序与SUMIF不同。",
+    "syntax": "=SUMIF(条件区域, 条件, [求和区域])\n=SUMIFS(求和区域, 条件区域1, 条件1, ...)",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "单条件求和",
+        "description": "销售额>1000的总和",
+        "code": "=SUMIF(B2:B20, \">1000\")",
+        "codeHtml": "<span style=\"color:#569CD6\">=SUMIF</span>(B2:B20, \">1000\")"
+      },
+      {
+        "title": "多条件求和",
+        "description": "北京地区且>1000",
+        "code": "=SUMIFS(C2:C20, A2:A20, \"北京\", C2:C20, \">1000\")",
+        "codeHtml": "<span style=\"color:#569CD6\">=SUMIFS</span>(C2:C20, A2:A20, \"北京\", C2:C20, \">1000\")"
+      }
+    ],
+    "tags": [
+      "求和",
+      "条件",
+      "必考"
+    ],
+    "usageFrequency": 92
+  },
+  {
+    "knowledgeId": "excel_know_003",
+    "categoryId": "excel",
+    "categoryName": "Excel函数",
+    "title": "IF 逻辑判断与嵌套",
+    "group": "逻辑",
+    "definition": "IF根据条件判断返回不同值。可嵌套实现多条件分支(如成绩等级)。Excel 2016+可用IFS替代多层嵌套。",
+    "syntax": "=IF(条件, 条件为真返回值, 条件为假返回值)",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "成绩及格判断",
+        "description": ">=60显示及格",
+        "code": "=IF(B2>=60, \"及格\", \"不及格\")",
+        "codeHtml": "<span style=\"color:#569CD6\">=IF</span>(B2>=60, \"及格\", \"不及格\")"
+      },
+      {
+        "title": "嵌套多等级",
+        "description": "优/良/中/差四级",
+        "code": "=IF(B2>=90,\"优\",IF(B2>=75,\"良\",IF(B2>=60,\"中\",\"差\")))",
+        "codeHtml": "<span style=\"color:#569CD6\">=IF</span>(B2>=90,\"优\",<span style=\"color:#569CD6\">IF</span>(B2>=75,\"良\",<span style=\"color:#569CD6\">IF</span>(B2>=60,\"中\",\"差\")))"
+      }
+    ],
+    "tags": [
+      "逻辑",
+      "条件",
+      "必考"
+    ],
+    "usageFrequency": 95
+  },
+  {
+    "knowledgeId": "excel_know_004",
+    "categoryId": "excel",
+    "categoryName": "Excel函数",
+    "title": "COUNT/COUNTA/COUNTIF 计数",
+    "group": "数学与统计",
+    "definition": "COUNT统计数字个数。COUNTA统计非空单元格。COUNTIF按条件计数。COUNTIFS多条件计数。",
+    "syntax": "=COUNTIF(区域, 条件)",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "统计及格人数",
+        "description": ">=60的人数",
+        "code": "=COUNTIF(B2:B50, \">=60\")",
+        "codeHtml": "<span style=\"color:#569CD6\">=COUNTIF</span>(B2:B50, \">=60\")"
+      }
+    ],
+    "tags": [
+      "计数",
+      "统计",
+      "常用"
+    ],
+    "usageFrequency": 85
+  },
+  {
+    "knowledgeId": "excel_know_005",
+    "categoryId": "excel",
+    "categoryName": "Excel函数",
+    "title": "文本函数 LEFT/RIGHT/MID/CONCAT/TRIM",
+    "group": "文本",
+    "definition": "文本截取(LEFT/RIGHT/MID)、合并(CONCATENATE/&)、清理(TRIM)、长度(LEN)、替换(REPLACE/SUBSTITUTE)。",
+    "syntax": "=LEFT(text, num_chars)\n=RIGHT(text, num_chars)\n=MID(text, start, num_chars)\n=TRIM(text)",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "合并姓和名",
+        "description": "用&和空格连接",
+        "code": "=A1 & \" \" & B1",
+        "codeHtml": "=A1 &amp; \" \" &amp; B1"
+      },
+      {
+        "title": "提取前5个字符",
+        "description": "LEFT截取",
+        "code": "=LEFT(A1, 5)",
+        "codeHtml": "<span style=\"color:#569CD6\">=LEFT</span>(A1, 5)"
+      }
+    ],
+    "tags": [
+      "文本",
+      "字符串",
+      "常用"
+    ],
+    "usageFrequency": 88
+  },
+  {
+    "knowledgeId": "excel_know_006",
+    "categoryId": "excel",
+    "categoryName": "Excel函数",
+    "title": "单元格引用 相对/绝对/混合",
+    "group": "基础概念",
+    "definition": "A1相对引用(拖动变化)。$A$1绝对引用(固定不变)。$A1列绝对行相对。A$1列相对行绝对。按F4快速切换。",
+    "syntax": "$A$1(绝对) / A1(相对) / $A1(列固定) / A$1(行固定)",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "混合引用",
+        "description": "列固定B,行相对",
+        "code": "=$B1 * A$1",
+        "codeHtml": "=<span style=\"color:#569CD6\">$B1</span> * <span style=\"color:#569CD6\">A$1</span>"
+      }
+    ],
+    "tags": [
+      "引用",
+      "基础",
+      "必考"
+    ],
+    "usageFrequency": 90
+  },
+  {
+    "knowledgeId": "excel_know_007",
+    "categoryId": "excel",
+    "categoryName": "Excel函数",
+    "title": "数据透视表",
+    "group": "数据分析",
+    "definition": "Excel最强大的数据分析工具,无需公式即可快速分类汇总、交叉分析、排序筛选。拖拽字段到行/列/值/筛选区域完成多维分析。",
+    "syntax": "插入 → 数据透视表",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "按部门汇总销售额",
+        "description": "行=部门,值=销售额求和",
+        "code": "拖拽\"部门\"到行区域,\"销售额\"到值区域",
+        "codeHtml": "拖拽字段即可完成分析,无需编写公式"
+      }
+    ],
+    "tags": [
+      "数据分析",
+      "汇总",
+      "高级"
+    ],
+    "usageFrequency": 75
+  },
+  {
+    "knowledgeId": "excel_know_008",
+    "categoryId": "excel",
+    "categoryName": "Excel函数",
+    "title": "ROUND/ROUNDUP/ROUNDDOWN 舍入",
+    "group": "数学与统计",
+    "definition": "ROUND四舍五入到指定小数位。ROUNDUP向上舍入(远离0)。ROUNDDOWN向下舍入(靠近0)。INT截断取整。",
+    "syntax": "=ROUND(number, num_digits)",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "保留两位小数",
+        "description": "四舍五入到2位",
+        "code": "=ROUND(3.14159, 2) → 3.14",
+        "codeHtml": "<span style=\"color:#569CD6\">=ROUND</span>(3.14159, 2) → 3.14"
+      }
+    ],
+    "tags": [
+      "数学",
+      "舍入",
+      "常用"
+    ],
+    "usageFrequency": 72
+  },
+  {
+    "knowledgeId": "excel_know_009",
+    "categoryId": "excel",
+    "categoryName": "Excel函数",
+    "title": "日期时间函数 TODAY/NOW/YEAR/MONTH/DAY",
+    "group": "日期时间",
+    "definition": "TODAY()当前日期,NOW()当前日期时间。YEAR/MONTH/DAY提取日期部分。DATEDIF计算日期间隔。NETWORKDAYS计算工作日。",
+    "syntax": "=TODAY()  /  =YEAR(date)  /  =DATEDIF(d1,d2,\"Y\")",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "计算工龄",
+        "description": "DATEDIF计算年份差",
+        "code": "=DATEDIF(B2, TODAY(), \"Y\")",
+        "codeHtml": "<span style=\"color:#569CD6\">=DATEDIF</span>(B2, TODAY(), \"Y\")"
+      },
+      {
+        "title": "计算工作日",
+        "description": "排除周末的天数",
+        "code": "=NETWORKDAYS(A1, B1)",
+        "codeHtml": "<span style=\"color:#569CD6\">=NETWORKDAYS</span>(A1, B1)"
+      }
+    ],
+    "tags": [
+      "日期",
+      "时间",
+      "常用"
+    ],
+    "usageFrequency": 80
+  },
+  {
+    "knowledgeId": "excel_know_010",
+    "categoryId": "excel",
+    "categoryName": "Excel函数",
+    "title": "逻辑函数 AND/OR/NOT/IFERROR",
+    "group": "逻辑",
+    "definition": "AND(全真才真),OR(有真即真),NOT(取反)。IFERROR捕获错误返回备用值。IFNA只捕获#N/A。XOR异或。",
+    "syntax": "=AND(c1,c2,...)  /  =IFERROR(formula, fallback)",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "多条件判断",
+        "description": "两科都及格",
+        "code": "=AND(B2>=60, C2>=60)",
+        "codeHtml": "<span style=\"color:#569CD6\">=AND</span>(B2>=60, C2>=60)"
+      },
+      {
+        "title": "错误处理",
+        "description": "除零时返回0",
+        "code": "=IFERROR(A1/B1, 0)",
+        "codeHtml": "<span style=\"color:#569CD6\">=IFERROR</span>(A1/B1, 0)"
+      }
+    ],
+    "tags": [
+      "逻辑",
+      "错误处理",
+      "常用"
+    ],
+    "usageFrequency": 78
+  },
+  {
+    "knowledgeId": "excel_know_011",
+    "categoryId": "excel",
+    "categoryName": "Excel函数",
+    "title": "INDEX+MATCH 高级查找",
+    "group": "查找与引用",
+    "definition": "INDEX+MATCH组合可反向查找(从右向左),比VLOOKUP更灵活。插入删除列时引用不会错位。",
+    "syntax": "=INDEX(返回列, MATCH(查找值, 查找列, 0))",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "反向查找",
+        "description": "根据姓名查ID(从右向左)",
+        "code": "=INDEX(A:A, MATCH(\"张三\", B:B, 0))",
+        "codeHtml": "<span style=\"color:#569CD6\">=INDEX</span>(A:A, <span style=\"color:#569CD6\">MATCH</span>(\"张三\", B:B, 0))"
+      }
+    ],
+    "tags": [
+      "查找",
+      "高级",
+      "必考"
+    ],
+    "usageFrequency": 85
+  },
+  {
+    "knowledgeId": "excel_know_012",
+    "categoryId": "excel",
+    "categoryName": "Excel函数",
+    "title": "条件格式与数据验证",
+    "group": "数据工具",
+    "definition": "条件格式根据值自动应用颜色/数据条/图标集。数据验证限制单元格输入类型和范围(整数/列表/日期等)。",
+    "syntax": "开始 → 条件格式  /  数据 → 数据验证",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "高亮重复值",
+        "description": "条件格式标记重复数据",
+        "code": "开始→条件格式→突出显示→重复值",
+        "codeHtml": "菜单: 开始→条件格式→突出显示单元格规则→重复值"
+      },
+      {
+        "title": "创建下拉列表",
+        "description": "限制输入为选项列表",
+        "code": "数据→数据验证→允许:序列→来源:选项1,选项2",
+        "codeHtml": "数据→数据验证→序列"
+      }
+    ],
+    "tags": [
+      "条件格式",
+      "数据验证",
+      "常用"
+    ],
+    "usageFrequency": 75
+  },
+  {
+    "knowledgeId": "python_know_001",
+    "categoryId": "python",
+    "categoryName": "Python基础",
+    "title": "列表(list)操作与推导式",
+    "group": "数据类型",
+    "definition": "列表是Python最常用的可变序列,用[]定义。支持索引/切片/append/pop/sort。列表推导式[i*2 for i in range(5)]简洁创建新列表。",
+    "syntax": "nums = [1,2,3]; nums.append(4); nums[1:3]; [x*2 for x in nums]",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "列表基本操作",
+        "description": "增删改查切片推导",
+        "code": "nums = [1,2,3,4,5]\nnums.append(6)     # [1,2,3,4,5,6]\nnums.pop()         # 删除6\nnums[1:4]          # [2,3,4]\n[x*2 for x in nums if x>2]  # [6,8,10]",
+        "codeHtml": "nums = [1,2,3,4,5]<br>nums.append(6)<br>nums[1:4] → [2,3,4]<br>[x*2 <span style=\"color:#C586C0\">for</span> x <span style=\"color:#C586C0\">in</span> nums <span style=\"color:#C586C0\">if</span> x>2]"
+      }
+    ],
+    "tags": [
+      "列表",
+      "数据类型",
+      "必考"
+    ],
+    "usageFrequency": 98
+  },
+  {
+    "knowledgeId": "python_know_002",
+    "categoryId": "python",
+    "categoryName": "Python基础",
+    "title": "基本数据类型 int/float/str/bool/None",
+    "group": "数据类型",
+    "definition": "Python 6种基本类型。type()查看类型,isinstance()判断类型。int无限精度,float双精度,str不可变Unicode。",
+    "syntax": "type(42)→int; type(3.14)→float; isinstance(x, int)→bool",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "类型检查",
+        "description": "type和isinstance",
+        "code": "x = 42\nprint(type(x))          # <class 'int'>\nprint(isinstance(x, (int, float)))  # True",
+        "codeHtml": "x = 42<br>print(type(x))<br>print(isinstance(x, (int, float))) → True"
+      }
+    ],
+    "tags": [
+      "数据类型",
+      "基础"
+    ],
+    "usageFrequency": 95
+  },
+  {
+    "knowledgeId": "python_know_003",
+    "categoryId": "python",
+    "categoryName": "Python基础",
+    "title": "字典(dict)操作",
+    "group": "数据类型",
+    "definition": "字典是键值对映射,用{}定义。key必须不可变类型(字符串/数字/元组)。get()安全访问避免KeyError。keys()/values()/items()遍历。",
+    "syntax": "d = {\"a\":1, \"b\":2}; d[\"c\"]=3; d.get(\"x\", 0); d.items()",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "安全访问",
+        "description": "get避免KeyError",
+        "code": "d = {\"name\": \"张三\", \"age\": 25}\nname = d.get(\"phone\", \"N/A\")  # N/A\nfor k, v in d.items():\n    print(k, v)",
+        "codeHtml": "d = {\"name\": \"张三\", \"age\": 25}<br>d.get(\"phone\", \"N/A\") → N/A"
+      }
+    ],
+    "tags": [
+      "字典",
+      "键值对",
+      "必考"
+    ],
+    "usageFrequency": 92
+  },
+  {
+    "knowledgeId": "python_know_004",
+    "categoryId": "python",
+    "categoryName": "Python基础",
+    "title": "for/while 循环与遍历",
+    "group": "流程控制",
+    "definition": "Python用for...in遍历可迭代对象。range(n)生成0到n-1序列。enumerate()同时获取索引和值。while条件循环。break跳出,continue跳过。",
+    "syntax": "for item in iterable:\n    循环体\n    \nwhile condition:\n    循环体",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "带索引遍历",
+        "description": "enumerate返回(index,value)",
+        "code": "fruits = [\"苹果\", \"香蕉\", \"橘子\"]\nfor i, fruit in enumerate(fruits):\n    print(f\"{i}: {fruit}\")",
+        "codeHtml": "<span style=\"color:#C586C0\">for</span> i, fruit <span style=\"color:#C586C0\">in</span> enumerate(fruits):<br>    print(f\"{i}: {fruit}\")"
+      }
+    ],
+    "tags": [
+      "循环",
+      "遍历",
+      "必考"
+    ],
+    "usageFrequency": 96
+  },
+  {
+    "knowledgeId": "python_know_005",
+    "categoryId": "python",
+    "categoryName": "Python基础",
+    "title": "函数定义 def *args **kwargs",
+    "group": "函数",
+    "definition": "def定义函数。支持默认参数、关键字参数、*args可变位置参数、**kwargs可变关键字参数。return返回值,无return返回None。",
+    "syntax": "def func(arg1, arg2=default, *args, **kwargs):",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "可变参数",
+        "description": "*args收集多余位置参数",
+        "code": "def sum_all(*args):\n    return sum(args)\nprint(sum_all(1,2,3,4,5))  # 15",
+        "codeHtml": "<span style=\"color:#C586C0\">def</span> sum_all(*args):<br>    <span style=\"color:#C586C0\">return</span> sum(args)"
+      }
+    ],
+    "tags": [
+      "函数",
+      "def",
+      "必考"
+    ],
+    "usageFrequency": 94
+  },
+  {
+    "knowledgeId": "python_know_006",
+    "categoryId": "python",
+    "categoryName": "Python基础",
+    "title": "类与面向对象(OOP)",
+    "group": "面向对象",
+    "definition": "class定义类。__init__构造方法。self实例本身。继承class Child(Parent)。super()调用父类。@property装饰器将方法转为属性。",
+    "syntax": "class MyClass:\n    def __init__(self, name):\n        self.name = name",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "继承与super",
+        "description": "子类调用父类构造",
+        "code": "class Animal:\n    def __init__(self, name):\n        self.name = name\nclass Dog(Animal):\n    def __init__(self, name, breed):\n        super().__init__(name)\n        self.breed = breed",
+        "codeHtml": "<span style=\"color:#C586C0\">class</span> Dog(<span style=\"color:#4EC9B0\">Animal</span>):<br>    <span style=\"color:#C586C0\">def</span> __init__(self, name, breed):<br>        <span style=\"color:#569CD6\">super</span>().__init__(name)"
+      }
+    ],
+    "tags": [
+      "类",
+      "OOP",
+      "必考"
+    ],
+    "usageFrequency": 88
+  },
+  {
+    "knowledgeId": "python_know_007",
+    "categoryId": "python",
+    "categoryName": "Python基础",
+    "title": "装饰器 @decorator",
+    "group": "高级特性",
+    "definition": "装饰器在不修改原函数代码的情况下,给函数增加额外功能(AOP)。本质是高阶函数,接收函数返回新函数。常用场景:日志/计时/权限/缓存。",
+    "syntax": "@decorator_name\ndef func():\n    pass",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "计时装饰器",
+        "description": "测量函数执行时间",
+        "code": "import time\ndef timer(func):\n    def wrapper(*args, **kwargs):\n        start = time.time()\n        result = func(*args, **kwargs)\n        print(f\"耗时: {time.time()-start:.3f}s\")\n        return result\n    return wrapper",
+        "codeHtml": "<span style=\"color:#C586C0\">def</span> timer(func):<br>    <span style=\"color:#C586C0\">def</span> wrapper(*args, **kwargs):<br>        start = time.time()<br>        ...<br>    <span style=\"color:#C586C0\">return</span> wrapper"
+      }
+    ],
+    "tags": [
+      "装饰器",
+      "高级",
+      "常用"
+    ],
+    "usageFrequency": 80
+  },
+  {
+    "knowledgeId": "python_know_008",
+    "categoryId": "python",
+    "categoryName": "Python基础",
+    "title": "lambda与高阶函数 map/filter/reduce",
+    "group": "函数式编程",
+    "definition": "lambda创建匿名函数。map(func,iter)逐元素映射。filter(func,iter)条件筛选。reduce(func,iter)累积归约(需from functools import reduce)。",
+    "syntax": "list(map(lambda x: x*2, [1,2,3])) → [2,4,6]",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "链式处理",
+        "description": "过滤偶数后加倍再求和",
+        "code": "from functools import reduce\nnums = [1,2,3,4,5,6]\nresult = reduce(lambda a,b: a+b,\n    map(lambda x: x*2,\n    filter(lambda x: x%2==0, nums)))",
+        "codeHtml": "r = reduce(lambda a,b: a+b, map(lambda x: x*2, filter(lambda x: x%2==0, nums)))"
+      }
+    ],
+    "tags": [
+      "lambda",
+      "函数式",
+      "高级"
+    ],
+    "usageFrequency": 75
+  },
+  {
+    "knowledgeId": "mysql_know_001",
+    "categoryId": "mysql",
+    "categoryName": "MySQL数据库",
+    "title": "SQL基础 SELECT/WHERE/ORDER/LIMIT",
+    "group": "SQL语法",
+    "definition": "SELECT查询数据,WHERE过滤行,ORDER BY排序(ASC升序/DESC降序),LIMIT限制行数。DISTINCT去重,BETWEEN范围查询,LIKE模糊匹配,IN集合匹配。",
+    "syntax": "SELECT 列名 FROM 表名 WHERE 条件 ORDER BY 列 LIMIT n",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "查询并排序",
+        "description": "查询成绩>60的学生,按成绩降序",
+        "code": "SELECT name, score FROM students WHERE score > 60 ORDER BY score DESC LIMIT 10;",
+        "codeHtml": "<span style=\"color:#569CD6\">SELECT</span> name, score <span style=\"color:#569CD6\">FROM</span> students <span style=\"color:#569CD6\">WHERE</span> score > 60 <span style=\"color:#569CD6\">ORDER BY</span> score <span style=\"color:#569CD6\">DESC LIMIT</span> 10;"
+      }
+    ],
+    "tags": [
+      "SQL",
+      "查询",
+      "基础"
+    ],
+    "usageFrequency": 99
+  },
+  {
+    "knowledgeId": "mysql_know_002",
+    "categoryId": "mysql",
+    "categoryName": "MySQL数据库",
+    "title": "CREATE/INSERT/UPDATE/DELETE 增删改",
+    "group": "SQL语法",
+    "definition": "CREATE TABLE创建表(含列名/类型/约束)。INSERT INTO插入数据。UPDATE SET修改数据。DELETE FROM删除数据。TRUNCATE清空表(不可回滚)。",
+    "syntax": "INSERT INTO table(col1,col2) VALUES(v1,v2);\nUPDATE table SET col=v WHERE cond;\nDELETE FROM table WHERE cond;",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "创建表并插入",
+        "description": "建学生表并添加数据",
+        "code": "CREATE TABLE students (\n  id INT PRIMARY KEY AUTO_INCREMENT,\n  name VARCHAR(50) NOT NULL,\n  score INT DEFAULT 0\n);\nINSERT INTO students(name,score) VALUES('张三',85);",
+        "codeHtml": "<span style=\"color:#569CD6\">CREATE TABLE</span> students (<br>  id <span style=\"color:#569CD6\">INT PRIMARY KEY AUTO_INCREMENT</span>,<br>  name <span style=\"color:#569CD6\">VARCHAR</span>(50) <span style=\"color:#569CD6\">NOT NULL</span><br>);"
+      }
+    ],
+    "tags": [
+      "SQL",
+      "增删改",
+      "基础"
+    ],
+    "usageFrequency": 97
+  },
+  {
+    "knowledgeId": "mysql_know_003",
+    "categoryId": "mysql",
+    "categoryName": "MySQL数据库",
+    "title": "JOIN 多表连接",
+    "group": "SQL语法",
+    "definition": "INNER JOIN返回两表匹配行。LEFT JOIN保留左表全部行。RIGHT JOIN保留右表。FULL JOIN保留全部(MySQL需用UNION模拟)。ON指定连接条件。",
+    "syntax": "SELECT * FROM a INNER JOIN b ON a.id = b.a_id",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "LEFT JOIN",
+        "description": "查所有学生及其成绩(含无成绩的)",
+        "code": "SELECT s.name, sc.score\nFROM students s\nLEFT JOIN scores sc ON s.id = sc.student_id;",
+        "codeHtml": "<span style=\"color:#569CD6\">SELECT</span> s.name, sc.score<br><span style=\"color:#569CD6\">FROM</span> students s<br><span style=\"color:#569CD6\">LEFT JOIN</span> scores sc <span style=\"color:#569CD6\">ON</span> s.id = sc.student_id;"
+      }
+    ],
+    "tags": [
+      "JOIN",
+      "多表",
+      "必考"
+    ],
+    "usageFrequency": 95
+  },
+  {
+    "knowledgeId": "mysql_know_004",
+    "categoryId": "mysql",
+    "categoryName": "MySQL数据库",
+    "title": "GROUP BY/HAVING 分组聚合",
+    "group": "SQL语法",
+    "definition": "GROUP BY按列分组。聚合函数:COUNT/SUM/AVG/MAX/MIN。HAVING过滤分组后结果(WHERE过滤分组前行)。执行顺序:WHERE→GROUP→HAVING→ORDER→LIMIT。",
+    "syntax": "SELECT col, COUNT(*) FROM t GROUP BY col HAVING COUNT(*) > 1",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "各部门统计",
+        "description": "部门人数>3的部门",
+        "code": "SELECT dept, COUNT(*) cnt, AVG(salary) avg_sal\nFROM employees\nGROUP BY dept\nHAVING COUNT(*) > 3;",
+        "codeHtml": "<span style=\"color:#569CD6\">SELECT</span> dept, <span style=\"color:#569CD6\">COUNT</span>(*) cnt<br><span style=\"color:#569CD6\">FROM</span> employees<br><span style=\"color:#569CD6\">GROUP BY</span> dept<br><span style=\"color:#569CD6\">HAVING COUNT</span>(*) > 3;"
+      }
+    ],
+    "tags": [
+      "分组",
+      "聚合",
+      "必考"
+    ],
+    "usageFrequency": 93
+  },
+  {
+    "knowledgeId": "mysql_know_005",
+    "categoryId": "mysql",
+    "categoryName": "MySQL数据库",
+    "title": "索引原理 B+树",
+    "group": "索引与优化",
+    "definition": "MySQL InnoDB索引使用B+树结构。主键索引(聚簇索引)叶子节点存完整行数据。二级索引叶子节点存主键值,需回表查询。覆盖索引不回表。",
+    "syntax": "CREATE INDEX idx_name ON table(col1, col2);",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "创建索引",
+        "description": "创建复合索引",
+        "code": "CREATE INDEX idx_dept_salary ON employees(dept, salary);\nEXPLAIN SELECT * FROM employees WHERE dept='IT' AND salary>5000;",
+        "codeHtml": "<span style=\"color:#569CD6\">CREATE INDEX</span> idx ON employees(dept, salary);<br><span style=\"color:#569CD6\">EXPLAIN SELECT</span> * <span style=\"color:#569CD6\">FROM</span> employees <span style=\"color:#569CD6\">WHERE</span> dept='IT';"
+      }
+    ],
+    "tags": [
+      "索引",
+      "B+树",
+      "必考"
+    ],
+    "usageFrequency": 96
+  },
+  {
+    "knowledgeId": "mysql_know_006",
+    "categoryId": "mysql",
+    "categoryName": "MySQL数据库",
+    "title": "事务 ACID 特性",
+    "group": "事务与锁",
+    "definition": "事务四大特性:Atomicity原子性(全部成功或全部回滚),Consistency一致性,Isolation隔离性(并发互不干扰),Durability持久性(提交后永久保存)。",
+    "syntax": "START TRANSACTION; ... COMMIT; 或 ROLLBACK;",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "转账事务",
+        "description": "A减B加,原子操作",
+        "code": "START TRANSACTION;\nUPDATE accounts SET balance=balance-100 WHERE id=1;\nUPDATE accounts SET balance=balance+100 WHERE id=2;\nCOMMIT;",
+        "codeHtml": "<span style=\"color:#569CD6\">START TRANSACTION</span>;<br><span style=\"color:#569CD6\">UPDATE</span> accounts <span style=\"color:#569CD6\">SET</span> balance=balance-100 <span style=\"color:#569CD6\">WHERE</span> id=1;<br><span style=\"color:#569CD6\">COMMIT</span>;"
+      }
+    ],
+    "tags": [
+      "事务",
+      "ACID",
+      "必考"
+    ],
+    "usageFrequency": 97
+  },
+  {
+    "knowledgeId": "mysql_know_007",
+    "categoryId": "mysql",
+    "categoryName": "MySQL数据库",
+    "title": "隔离级别与MVCC",
+    "group": "事务与锁",
+    "definition": "4种隔离级别:READ UNCOMMITTED(脏读),READ COMMITTED(不可重复读),REPEATABLE READ(MySQL默认,幻读通过间隙锁解决),SERIALIZABLE(串行)。MVCC通过undo log+ReadView实现快照读。",
+    "syntax": "SET TRANSACTION ISOLATION LEVEL REPEATABLE READ;",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "查看隔离级别",
+        "description": "查看当前隔离级别",
+        "code": "SELECT @@transaction_isolation;\nSET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED;",
+        "codeHtml": "<span style=\"color:#569CD6\">SELECT</span> @@transaction_isolation;<br><span style=\"color:#569CD6\">SET</span> TRANSACTION ISOLATION LEVEL READ COMMITTED;"
+      }
+    ],
+    "tags": [
+      "隔离级别",
+      "MVCC",
+      "必考"
+    ],
+    "usageFrequency": 94
+  },
+  {
+    "knowledgeId": "mysql_know_008",
+    "categoryId": "mysql",
+    "categoryName": "MySQL数据库",
+    "title": "SQL优化 EXPLAIN 执行计划",
+    "group": "索引与优化",
+    "definition": "EXPLAIN分析SQL执行计划。关注type(ALL全表→index→range→ref→const),key(使用的索引),rows(扫描行数),Extra(Using filesort/Using temporary需优化)。",
+    "syntax": "EXPLAIN SELECT * FROM t WHERE col = 'value';",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "分析查询",
+        "description": "查看是否走索引",
+        "code": "EXPLAIN SELECT * FROM orders WHERE user_id=100 AND status='paid';\n-- type:ref, key:idx_user_status → 索引有效",
+        "codeHtml": "<span style=\"color:#569CD6\">EXPLAIN SELECT</span> * <span style=\"color:#569CD6\">FROM</span> orders <span style=\"color:#569CD6\">WHERE</span> user_id=100;"
+      }
+    ],
+    "tags": [
+      "优化",
+      "EXPLAIN",
+      "必考"
+    ],
+    "usageFrequency": 91
+  },
+  {
+    "knowledgeId": "java_know_001",
+    "categoryId": "java",
+    "categoryName": "Java开发",
+    "title": "Java基础 数据类型与变量",
+    "group": "基础语法",
+    "definition": "8种基本类型:byte/short/int/long/float/double/char/boolean。引用类型:String/数组/对象。包装类:Integer/Long等提供对象形式。自动装箱拆箱。",
+    "syntax": "int num = 10;\nString str = \"Hello\";\nInteger obj = num;  // 自动装箱",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "类型转换",
+        "description": "int与Integer互转",
+        "code": "int a = 100;\nInteger b = a;       // 自动装箱\nint c = b;           // 自动拆箱\nString s = String.valueOf(a);  // int→String\nint d = Integer.parseInt(\"200\");  // String→int",
+        "codeHtml": "<span style=\"color:#569CD6\">int</span> a = 100;<br><span style=\"color:#4EC9B0\">Integer</span> b = a;  <span style=\"color:#6A9955\">// 自动装箱</span>"
+      }
+    ],
+    "tags": [
+      "基础",
+      "数据类型",
+      "必考"
+    ],
+    "usageFrequency": 99
+  },
+  {
+    "knowledgeId": "java_know_002",
+    "categoryId": "java",
+    "categoryName": "Java开发",
+    "title": "面向对象 封装/继承/多态",
+    "group": "OOP",
+    "definition": "封装:private+getter/setter隐藏细节。继承:extends复用父类代码,单继承。多态:父类引用指向子类对象,方法重写实现动态绑定。super调用父类,this当前对象。",
+    "syntax": "class Dog extends Animal {\n    @Override\n    public void speak() { System.out.println(\"汪汪\"); }\n}",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "多态示例",
+        "description": "父类引用指向子类对象",
+        "code": "Animal a = new Dog();        // 向上转型\na.speak();                    // 调用Dog的speak()\nif (a instanceof Dog) {\n    Dog d = (Dog) a;          // 向下转型\n}",
+        "codeHtml": "<span style=\"color:#4EC9B0\">Animal</span> a = <span style=\"color:#C586C0\">new</span> <span style=\"color:#4EC9B0\">Dog</span>();<br>a.speak();  <span style=\"color:#6A9955\">// 多态调用</span>"
+      }
+    ],
+    "tags": [
+      "OOP",
+      "多态",
+      "必考"
+    ],
+    "usageFrequency": 98
+  },
+  {
+    "knowledgeId": "java_know_003",
+    "categoryId": "java",
+    "categoryName": "Java开发",
+    "title": "集合框架 List/Set/Map",
+    "group": "集合",
+    "definition": "List:有序可重复(ArrayList数组,LinkedList链表)。Set:无序不可重复(HashSet哈希,TreeSet红黑树)。Map:键值对(HashMap哈希,TreeMap红黑树排序,ConcurrentHashMap线程安全)。",
+    "syntax": "List<String> list = new ArrayList<>();\nMap<String, Integer> map = new HashMap<>();",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "集合操作",
+        "description": "List/Set/Map常用操作",
+        "code": "List<Integer> list = new ArrayList<>();\nlist.add(1); list.add(2); list.get(0);\nSet<String> set = new HashSet<>();\nset.add(\"a\"); set.contains(\"a\");\nMap<String,Integer> map = new HashMap<>();\nmap.put(\"key\",1); map.get(\"key\");",
+        "codeHtml": "<span style=\"color:#4EC9B0\">List</span>&lt;<span style=\"color:#4EC9B0\">Integer</span>&gt; list = <span style=\"color:#C586C0\">new</span> <span style=\"color:#4EC9B0\">ArrayList</span>&lt;&gt;();"
+      }
+    ],
+    "tags": [
+      "集合",
+      "List",
+      "Map",
+      "必考"
+    ],
+    "usageFrequency": 97
+  },
+  {
+    "knowledgeId": "java_know_004",
+    "categoryId": "java",
+    "categoryName": "Java开发",
+    "title": "String/StringBuilder/StringBuffer",
+    "group": "基础语法",
+    "definition": "String不可变(每次修改创建新对象)。StringBuilder可变且线程不安全(快)。StringBuffer可变且线程安全(synchronized,慢)。字符串拼接用+底层编译为StringBuilder。",
+    "syntax": "String s = \"Hello\";\nStringBuilder sb = new StringBuilder();\nsb.append(\"a\").append(\"b\");",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "高效拼接",
+        "description": "循环中用StringBuilder",
+        "code": "StringBuilder sb = new StringBuilder();\nfor (int i = 0; i < 1000; i++) {\n    sb.append(i).append(\",\");\n}\nString result = sb.toString();",
+        "codeHtml": "<span style=\"color:#4EC9B0\">StringBuilder</span> sb = <span style=\"color:#C586C0\">new</span> <span style=\"color:#4EC9B0\">StringBuilder</span>();<br><span style=\"color:#C586C0\">for</span> (<span style=\"color:#569CD6\">int</span> i=0; i<1000; i++) sb.append(i);"
+      }
+    ],
+    "tags": [
+      "String",
+      "基础",
+      "必考"
+    ],
+    "usageFrequency": 95
+  },
+  {
+    "knowledgeId": "java_know_005",
+    "categoryId": "java",
+    "categoryName": "Java开发",
+    "title": "多线程与锁",
+    "group": "并发",
+    "definition": "创建线程:extends Thread或implements Runnable/Callable。synchronized同步锁(方法/代码块)。volatile保证可见性+禁止重排(不保证原子性)。wait/notify需在synchronized中。",
+    "syntax": "synchronized(obj) { ... }\nvolatile boolean flag = false;",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "同步代码块",
+        "description": "锁定共享对象",
+        "code": "public class Counter {\n    private int count = 0;\n    public synchronized void increment() {\n        count++;\n    }\n}",
+        "codeHtml": "<span style=\"color:#C586C0\">public synchronized void</span> increment() {<br>    count++;<br>}"
+      }
+    ],
+    "tags": [
+      "多线程",
+      "锁",
+      "必考"
+    ],
+    "usageFrequency": 93
+  },
+  {
+    "knowledgeId": "java_know_006",
+    "categoryId": "java",
+    "categoryName": "Java开发",
+    "title": "JVM内存模型与GC",
+    "group": "JVM",
+    "definition": "JVM内存:堆(对象实例),栈(局部变量),方法区(类信息/常量池),程序计数器。GC回收堆中无引用对象。Minor GC(年轻代),Major GC(老年代),Full GC(整个堆)。",
+    "syntax": "-Xms512m -Xmx1024m (堆初始/最大)",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "GC日志",
+        "description": "查看GC情况",
+        "code": "// JVM参数\njava -Xms256m -Xmx512m -XX:+PrintGCDetails MyApp\n// System.gc()仅建议GC,不保证执行",
+        "codeHtml": "java -Xms256m -Xmx512m -XX:+PrintGCDetails MyApp"
+      }
+    ],
+    "tags": [
+      "JVM",
+      "GC",
+      "必考"
+    ],
+    "usageFrequency": 90
+  },
+  {
+    "knowledgeId": "java_know_007",
+    "categoryId": "java",
+    "categoryName": "Java开发",
+    "title": "异常处理 try-catch-finally",
+    "group": "基础语法",
+    "definition": "checked异常(必须处理,如IOException)。unchecked/RuntimeException(NPE/ArrayIndexOutOfBounds等)。finally必执行(除System.exit)。try-with-resources自动关闭资源。",
+    "syntax": "try { ... } catch (Exception e) { ... } finally { ... }",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "try-with-resources",
+        "description": "自动关闭文件流",
+        "code": "try (FileInputStream fis = new FileInputStream(\"a.txt\")) {\n    int data = fis.read();\n} catch (IOException e) {\n    e.printStackTrace();\n}",
+        "codeHtml": "<span style=\"color:#C586C0\">try</span> (<span style=\"color:#4EC9B0\">FileInputStream</span> fis = <span style=\"color:#C586C0\">new</span> <span style=\"color:#4EC9B0\">FileInputStream</span>(...)) {<br>    ...<br>} <span style=\"color:#C586C0\">catch</span> (<span style=\"color:#4EC9B0\">IOException</span> e) { ... }"
+      }
+    ],
+    "tags": [
+      "异常",
+      "try-catch",
+      "必考"
+    ],
+    "usageFrequency": 92
+  },
+  {
+    "knowledgeId": "java_know_008",
+    "categoryId": "java",
+    "categoryName": "Java开发",
+    "title": "Spring IoC/DI 与 AOP",
+    "group": "框架",
+    "definition": "IoC控制反转:容器管理对象创建和依赖。DI依赖注入:@Autowired自动装配。AOP面向切面:@Aspect定义切面,@Before/@After/@Around增强。@Transactional声明式事务。",
+    "syntax": "@Autowired\nprivate UserService userService;",
+    "parameters": [],
+    "examples": [
+      {
+        "title": "Spring Boot 入门",
+        "description": "REST接口示例",
+        "code": "@RestController\npublic class HelloController {\n    @Autowired\n    private UserService userService;\n\n    @GetMapping(\"/hello\")\n    public String hello() { return \"Hello Spring!\"; }\n}",
+        "codeHtml": "<span style=\"color:#569CD6\">@RestController</span><br><span style=\"color:#C586C0\">public class</span> <span style=\"color:#4EC9B0\">HelloController</span> {<br>    <span style=\"color:#569CD6\">@GetMapping</span>(<span style=\"color:#CE9178\">\"/hello\"</span>)<br>    <span style=\"color:#C586C0\">public</span> <span style=\"color:#4EC9B0\">String</span> hello() { ... }<br>}"
+      }
+    ],
+    "tags": [
+      "Spring",
+      "IoC",
+      "AOP",
+      "必考"
+    ],
+    "usageFrequency": 95
+  }
+]

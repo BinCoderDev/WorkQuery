@@ -1,0 +1,34 @@
+[
+  {
+    "bankId": "excel",
+    "name": "Excel函数题库",
+    "icon": "📊",
+    "desc": "覆盖函数、公式、数据处理、图表等面试高频考点",
+    "total": 200,
+    "order": 1
+  },
+  {
+    "bankId": "python",
+    "name": "Python基础题库",
+    "icon": "🐍",
+    "desc": "覆盖语法、数据类型、面向对象、常用库等面试考点",
+    "total": 200,
+    "order": 2
+  },
+  {
+    "bankId": "mysql",
+    "name": "MySQL数据库题库",
+    "icon": "🗄️",
+    "desc": "覆盖SQL语法、索引、事务、优化等面试高频考点",
+    "total": 200,
+    "order": 3
+  },
+  {
+    "bankId": "java",
+    "name": "Java开发题库",
+    "icon": "☕",
+    "desc": "覆盖基础语法、集合、多线程、Spring等面试考点",
+    "total": 200,
+    "order": 4
+  }
+]
